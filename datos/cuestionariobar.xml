@@ -1,0 +1,1606 @@
+<root>
+	<cuestionarios0>
+		<element>
+			<cant_cuest0>4</cant_cuest0>
+		</element>
+		<element>
+			<idcuestionario0>1</idcuestionario0>
+			<nombre_cuestionario0>Reforma Electoral</nombre_cuestionario0>
+			<numero_temas0>10</numero_temas0>
+			<cantidad0>215</cantidad0>
+			<valor0>10</valor0>
+		</element>
+		<element>
+			<idcuestionario0>2</idcuestionario0>
+			<nombre_cuestionario0>Institucionalidad Democratica</nombre_cuestionario0>
+			<numero_temas0>5</numero_temas0>
+			<cantidad0>2134</cantidad0>
+			<valor0>100</valor0>
+		</element>
+		<element>
+			<idcuestionario0>3</idcuestionario0>
+			<nombre_cuestionario0>Censo</nombre_cuestionario0>
+			<numero_temas0>4</numero_temas0>
+			<cantidad0>27</cantidad0>
+			<valor0>1</valor0>
+		</element>
+		<element>
+			<idcuestionario0>4</idcuestionario0>
+			<nombre_cuestionario0>Leyes</nombre_cuestionario0>
+			<numero_temas0>22</numero_temas0>
+			<cantidad0>181</cantidad0>
+			<valor0>8</valor0>
+		</element>
+	</cuestionarios0>
+	<temas0>
+		<element>
+		<idc0>1</idc0>
+			<idtema0>1</idtema0>
+			<nombre_tema0>Presentacion de Estatutos de organizaciones politicas</nombre_tema0>
+			<cant_subtemas0>1</cant_subtemas0>
+			<cantidadportema0>19</cantidadportema0>
+			<valorportema0>21</valorportema0>
+		</element>
+		<element>
+		<idc0>1</idc0>
+			<idtema0>2</idtema0>
+			<nombre_tema0>Competencias Jurisdicionales del TSE</nombre_tema0>
+			<cant_subtemas0>3</cant_subtemas0>
+			<cantidadportema0>92</cantidadportema0>
+			<valorportema0>100</valorportema0>
+		</element>
+		<element>
+		<idc0>1</idc0>
+			<idtema0>3</idtema0>
+			<nombre_tema0>Redistribuicion de Escaños</nombre_tema0>
+			<cant_subtemas0>3</cant_subtemas0>
+			<cantidadportema0>3</cantidadportema0>
+			<valorportema0>3</valorportema0>
+		</element>
+		<element>
+		<idc0>1</idc0>
+			<idtema0>4</idtema0>
+			<nombre_tema0>Circunscripciones uninominales</nombre_tema0>
+			<cant_subtemas0>2</cant_subtemas0>
+			<cantidadportema0>0</cantidadportema0>
+			<valorportema0>0</valorportema0>
+		</element>
+		<element>
+		<idc0>1</idc0>
+			<idtema0>5</idtema0>
+			<nombre_tema0>Difusion de encuestas</nombre_tema0>
+			<cant_subtemas0>2</cant_subtemas0>
+			<cantidadportema0>5</cantidadportema0>
+			<valorportema0>5</valorportema0>
+		</element>
+		<element>
+		<idc0>1</idc0>
+			<idtema0>6</idtema0>
+			<nombre_tema0>Inhabilitacion de candidatos</nombre_tema0>
+			<cant_subtemas0>1</cant_subtemas0>
+			<cantidadportema0>4</cantidadportema0>
+			<valorportema0>4</valorportema0>
+		</element>
+		<element>
+		<idc0>1</idc0>
+			<idtema0>7</idtema0>
+			<nombre_tema0>Computo departamental</nombre_tema0>
+			<cant_subtemas0>3</cant_subtemas0>
+			<cantidadportema0>16</cantidadportema0>
+			<valorportema0>17</valorportema0>
+		</element>
+		<element>
+		<idc0>1</idc0>
+			<idtema0>8</idtema0>
+			<nombre_tema0>Padron Electoral</nombre_tema0>
+			<cant_subtemas0>4</cant_subtemas0>
+			<cantidadportema0>14</cantidadportema0>
+			<valorportema0>15</valorportema0>
+		</element>
+		<element>
+		<idc0>1</idc0>
+			<idtema0>9</idtema0>
+			<nombre_tema0>Procedimientos Tecnico Electorales</nombre_tema0>
+			<cant_subtemas0>4</cant_subtemas0>
+			<cantidadportema0>9</cantidadportema0>
+			<valorportema0>10</valorportema0>
+		</element>
+		<element>
+		<idc0>1</idc0>
+			<idtema0>10</idtema0>
+			<nombre_tema0>Financiamiento politico y partidario</nombre_tema0>
+			<cant_subtemas0>1</cant_subtemas0>
+			<cantidadportema0>5</cantidadportema0>
+			<valorportema0>5</valorportema0>
+		</element>
+		<element>
+		<idc0>2</idc0>
+			<idtema0>11</idtema0>
+			<nombre_tema0>Ejercicio en libertad de derechos políticos</nombre_tema0>
+			<cant_subtemas0>6</cant_subtemas0>
+			<cantidadportema0>860</cantidadportema0>
+			<valorportema0>100</valorportema0>
+		</element>
+		<element>
+		<idc0>2</idc0>
+			<idtema0>12</idtema0>
+			<nombre_tema0>Inclusión política</nombre_tema0>
+			<cant_subtemas0>2</cant_subtemas0>
+			<cantidadportema0>111</cantidadportema0>
+			<valorportema0>13</valorportema0>
+		</element>
+		<element>
+		<idc0>2</idc0>
+			<idtema0>13</idtema0>
+			<nombre_tema0>Participación en el ámbito electoral</nombre_tema0>
+			<cant_subtemas0>5</cant_subtemas0>
+			<cantidadportema0>244</cantidadportema0>
+			<valorportema0>28</valorportema0>
+		</element>
+		<element>
+		<idc0>2</idc0>
+			<idtema0>14</idtema0>
+			<nombre_tema0>Integración de los ciudadanos en la definición y gestión del Estado</nombre_tema0>
+			<cant_subtemas0>8</cant_subtemas0>
+			<cantidadportema0>585</cantidadportema0>
+			<valorportema0>68</valorportema0>
+		</element>
+		<element>
+		<idc0>2</idc0>
+			<idtema0>15</idtema0>
+			<nombre_tema0>Instituciones</nombre_tema0>
+			<cant_subtemas0>3</cant_subtemas0>
+			<cantidadportema0>265</cantidadportema0>
+			<valorportema0>31</valorportema0>
+		</element>
+		<element>
+		<idc0>3</idc0>
+			<idtema0>16</idtema0>
+			<nombre_tema0>Información a la población </nombre_tema0>
+			<cant_subtemas0>3</cant_subtemas0>
+			<cantidadportema0>9</cantidadportema0>
+			<valorportema0>90</valorportema0>
+		</element>
+		<element>
+		<idc0>3</idc0>
+			<idtema0>17</idtema0>
+			<nombre_tema0>Uso de los datos censales</nombre_tema0>
+			<cant_subtemas0>7</cant_subtemas0>
+			<cantidadportema0>3</cantidadportema0>
+			<valorportema0>30</valorportema0>
+		</element>
+		<element>
+		<idc0>3</idc0>
+			<idtema0>18</idtema0>
+			<nombre_tema0>Otros Censos</nombre_tema0>
+			<cant_subtemas0>3</cant_subtemas0>
+			<cantidadportema0>2</cantidadportema0>
+			<valorportema0>20</valorportema0>
+		</element>
+		<element>
+		<idc0>3</idc0>
+			<idtema0>19</idtema0>
+			<nombre_tema0>Etapa Pre Censal </nombre_tema0>
+			<cant_subtemas0>9</cant_subtemas0>
+			<cantidadportema0>10</cantidadportema0>
+			<valorportema0>100</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>20</idtema0>
+			<nombre_tema0>Educación</nombre_tema0>
+			<cant_subtemas0>3</cant_subtemas0>
+			<cantidadportema0>4</cantidadportema0>
+			<valorportema0>12</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>21</idtema0>
+			<nombre_tema0>Salud</nombre_tema0>
+			<cant_subtemas0>6</cant_subtemas0>
+			<cantidadportema0>2</cantidadportema0>
+			<valorportema0>6</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>22</idtema0>
+			<nombre_tema0>Administración De Justicia</nombre_tema0>
+			<cant_subtemas0>5</cant_subtemas0>
+			<cantidadportema0>6</cantidadportema0>
+			<valorportema0>18</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>23</idtema0>
+			<nombre_tema0>Seguridad Ciudadana</nombre_tema0>
+			<cant_subtemas0>5</cant_subtemas0>
+			<cantidadportema0>9</cantidadportema0>
+			<valorportema0>26</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>24</idtema0>
+			<nombre_tema0>Género</nombre_tema0>
+			<cant_subtemas0>2</cant_subtemas0>
+			<cantidadportema0>0</cantidadportema0>
+			<valorportema0>0</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>25</idtema0>
+			<nombre_tema0>Igualdad (Inclusión)</nombre_tema0>
+			<cant_subtemas0>5</cant_subtemas0>
+			<cantidadportema0>8</cantidadportema0>
+			<valorportema0>24</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>26</idtema0>
+			<nombre_tema0>Bonos</nombre_tema0>
+			<cant_subtemas0>1</cant_subtemas0>
+			<cantidadportema0>0</cantidadportema0>
+			<valorportema0>0</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>27</idtema0>
+			<nombre_tema0>Medio Ambiente</nombre_tema0>
+			<cant_subtemas0>6</cant_subtemas0>
+			<cantidadportema0>7</cantidadportema0>
+			<valorportema0>21</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>28</idtema0>
+			<nombre_tema0>Economía</nombre_tema0>
+			<cant_subtemas0>14</cant_subtemas0>
+			<cantidadportema0>6</cantidadportema0>
+			<valorportema0>18</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>29</idtema0>
+			<nombre_tema0>Pobreza Y Desarrollo</nombre_tema0>
+			<cant_subtemas0>8</cant_subtemas0>
+			<cantidadportema0>4</cantidadportema0>
+			<valorportema0>12</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>30</idtema0>
+			<nombre_tema0>Empleo</nombre_tema0>
+			<cant_subtemas0>4</cant_subtemas0>
+			<cantidadportema0>9</cantidadportema0>
+			<valorportema0>26</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>31</idtema0>
+			<nombre_tema0>Impuestos</nombre_tema0>
+			<cant_subtemas0>0</cant_subtemas0>
+			<cantidadportema0>0</cantidadportema0>
+			<valorportema0>0</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>32</idtema0>
+			<nombre_tema0>Industria</nombre_tema0>
+			<cant_subtemas0>11</cant_subtemas0>
+			<cantidadportema0>11</cantidadportema0>
+			<valorportema0>32</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>33</idtema0>
+			<nombre_tema0>Energía</nombre_tema0>
+			<cant_subtemas0>7</cant_subtemas0>
+			<cantidadportema0>1</cantidadportema0>
+			<valorportema0>3</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>34</idtema0>
+			<nombre_tema0>Recursos Naturales</nombre_tema0>
+			<cant_subtemas0>8</cant_subtemas0>
+			<cantidadportema0>2</cantidadportema0>
+			<valorportema0>6</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>35</idtema0>
+			<nombre_tema0>Descentralización Y Autonomía</nombre_tema0>
+			<cant_subtemas0>0</cant_subtemas0>
+			<cantidadportema0>0</cantidadportema0>
+			<valorportema0>0</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>36</idtema0>
+			<nombre_tema0>Narcotráfico</nombre_tema0>
+			<cant_subtemas0>5</cant_subtemas0>
+			<cantidadportema0>0</cantidadportema0>
+			<valorportema0>0</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>37</idtema0>
+			<nombre_tema0>Corrupción</nombre_tema0>
+			<cant_subtemas0>3</cant_subtemas0>
+			<cantidadportema0>5</cantidadportema0>
+			<valorportema0>15</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>38</idtema0>
+			<nombre_tema0>Turismo</nombre_tema0>
+			<cant_subtemas0>3</cant_subtemas0>
+			<cantidadportema0>34</cantidadportema0>
+			<valorportema0>100</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>39</idtema0>
+			<nombre_tema0>Arte Y Cultura</nombre_tema0>
+			<cant_subtemas0>0</cant_subtemas0>
+			<cantidadportema0>0</cantidadportema0>
+			<valorportema0>0</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>40</idtema0>
+			<nombre_tema0>Deportes</nombre_tema0>
+			<cant_subtemas0>4</cant_subtemas0>
+			<cantidadportema0>0</cantidadportema0>
+			<valorportema0>0</valorportema0>
+		</element>
+		<element>
+		<idc0>4</idc0>
+			<idtema0>41</idtema0>
+			<nombre_tema0>Política Exterior</nombre_tema0>
+			<cant_subtemas0>7</cant_subtemas0>
+			<cantidadportema0>0</cantidadportema0>
+			<valorportema0>0</valorportema0>
+		</element>
+	</temas0>
+	<subtemas0>
+	<element>
+		<idt0>1</idt0>
+		<idsubtema0>1</idsubtema0>
+		<nombre_subtema0>Estatutos de organizaciones políticas – Ley 1096</nombre_subtema0>
+		<cantidadporsubtema0>19</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>2</idt0>
+		<idsubtema0>2</idsubtema0>
+		<nombre_subtema0>Competencias del TSE</nombre_subtema0>
+		<cantidadporsubtema0>29</cantidadporsubtema0>
+		<valorporsubtema0>40</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>2</idt0>
+		<idsubtema0>3</idsubtema0>
+		<nombre_subtema0>Tutela de derechos políticos</nombre_subtema0>
+		<cantidadporsubtema0>11</cantidadporsubtema0>
+		<valorporsubtema0>15</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>2</idt0>
+		<idsubtema0>4</idsubtema0>
+		<nombre_subtema0>Juzgamiento de faltas y delitos electorales</nombre_subtema0>
+		<cantidadporsubtema0>72</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>3</idt0>
+		<idsubtema0>5</idsubtema0>
+		<nombre_subtema0>Redistribución de escaños a nivel nacional</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>3</idt0>
+		<idsubtema0>6</idsubtema0>
+		<nombre_subtema0>Redistribución de escaños a nivel departamental</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>3</idt0>
+		<idsubtema0>7</idsubtema0>
+		<nombre_subtema0>Redistribución del número de concejales del municipio</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>4</idt0>
+		<idsubtema0>12</idsubtema0>
+		<nombre_subtema0>Cartografía electoral</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>4</idt0>
+		<idsubtema0>13</idsubtema0>
+		<nombre_subtema0>Delimitación de circunscripciones</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>5</idt0>
+		<idsubtema0>23</idsubtema0>
+		<nombre_subtema0>Sanciones por la difusión de encuestas electorales</nombre_subtema0>
+		<cantidadporsubtema0>3</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>5</idt0>
+		<idsubtema0>24</idsubtema0>
+		<nombre_subtema0>Requisitos de habilitación de empresas encuestadoras</nombre_subtema0>
+		<cantidadporsubtema0>3</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>6</idt0>
+		<idsubtema0>22</idsubtema0>
+		<nombre_subtema0>Fechas de presentación de candidaturas e inhabilitaciones</nombre_subtema0>
+		<cantidadporsubtema0>4</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>7</idt0>
+		<idsubtema0>19</idsubtema0>
+		<nombre_subtema0>Procedimientos para el traslado de actas</nombre_subtema0>
+		<cantidadporsubtema0>6</cantidadporsubtema0>
+		<valorporsubtema0>55</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>7</idt0>
+		<idsubtema0>20</idsubtema0>
+		<nombre_subtema0>Procedimientos para el juzgamiento de actas</nombre_subtema0>
+		<cantidadporsubtema0>11</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>7</idt0>
+		<idsubtema0>21</idsubtema0>
+		<nombre_subtema0>Plazos para entrega de resultados</nombre_subtema0>
+		<cantidadporsubtema0>6</cantidadporsubtema0>
+		<valorporsubtema0>55</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>8</idt0>
+		<idsubtema0>8</idsubtema0>
+		<nombre_subtema0>Irregularidades del padrón</nombre_subtema0>
+		<cantidadporsubtema0>13</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>8</idt0>
+		<idsubtema0>9</idsubtema0>
+		<nombre_subtema0>Plataforma tecnológica del padrón</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>8</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>8</idt0>
+		<idsubtema0>10</idsubtema0>
+		<nombre_subtema0>Inclusión de poblaciones indígenas</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>8</idt0>
+		<idsubtema0>11</idsubtema0>
+		<nombre_subtema0>Intercambio de información con el SEGIP</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>9</idt0>
+		<idsubtema0>14</idsubtema0>
+		<nombre_subtema0>Selección y capacitación de notarios</nombre_subtema0>
+		<cantidadporsubtema0>3</cantidadporsubtema0>
+		<valorporsubtema0>75</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>9</idt0>
+		<idsubtema0>15</idsubtema0>
+		<nombre_subtema0>Capacitación de jurados electorales</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>9</idt0>
+		<idsubtema0>16</idsubtema0>
+		<nombre_subtema0>Estrategia de educación cívica y ciudadana</nombre_subtema0>
+		<cantidadporsubtema0>4</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>9</idt0>
+		<idsubtema0>17</idsubtema0>
+		<nombre_subtema0>Papel de los medios de comunicación en campaña electoral</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>10</idt0>
+		<idsubtema0>18</idsubtema0>
+		<nombre_subtema0>Financiamiento en etapas electorales y no electorales</nombre_subtema0>
+		<cantidadporsubtema0>5</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>11</idt0>
+		<idsubtema0>25</idsubtema0>
+		<nombre_subtema0>Garantías para el ejercicio de los derechos de los individuos frente a la arbitrariedad de los gobernantes</nombre_subtema0>
+		<cantidadporsubtema0>480</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>11</idt0>
+		<idsubtema0>26</idsubtema0>
+		<nombre_subtema0>Garantía del ejercicio de derechos políticos y su profundización</nombre_subtema0>
+		<cantidadporsubtema0>360</cantidadporsubtema0>
+		<valorporsubtema0>75</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>11</idt0>
+		<idsubtema0>27</idsubtema0>
+		<nombre_subtema0>Progresiva realización de igualdad política, social y económica</nombre_subtema0>
+		<cantidadporsubtema0>87</cantidadporsubtema0>
+		<valorporsubtema0>18</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>11</idt0>
+		<idsubtema0>28</idsubtema0>
+		<nombre_subtema0>Derecho a elegir, a ser elegido y a ocupar cargos públicos</nombre_subtema0>
+		<cantidadporsubtema0>55</cantidadporsubtema0>
+		<valorporsubtema0>11</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>11</idt0>
+		<idsubtema0>29</idsubtema0>
+		<nombre_subtema0>Libertad de expresión</nombre_subtema0>
+		<cantidadporsubtema0>254</cantidadporsubtema0>
+		<valorporsubtema0>53</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>11</idt0>
+		<idsubtema0>30</idsubtema0>
+		<nombre_subtema0>Acceso a la información</nombre_subtema0>
+		<cantidadporsubtema0>90</cantidadporsubtema0>
+		<valorporsubtema0>19</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>12</idt0>
+		<idsubtema0>44</idsubtema0>
+		<nombre_subtema0>Participación de la mujer</nombre_subtema0>
+		<cantidadporsubtema0>43</cantidadporsubtema0>
+		<valorporsubtema0>60</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>12</idt0>
+		<idsubtema0>45</idsubtema0>
+		<nombre_subtema0>Participación de poblaciones indígenas</nombre_subtema0>
+		<cantidadporsubtema0>72</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>13</idt0>
+		<idsubtema0>39</idsubtema0>
+		<nombre_subtema0>Elegir en libertad, sin discriminación ni exclusión</nombre_subtema0>
+		<cantidadporsubtema0>19</cantidadporsubtema0>
+		<valorporsubtema0>9</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>13</idt0>
+		<idsubtema0>40</idsubtema0>
+		<nombre_subtema0>Elecciones libres, regulares y transparentes</nombre_subtema0>
+		<cantidadporsubtema0>210</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>13</idt0>
+		<idsubtema0>41</idsubtema0>
+		<nombre_subtema0>Libertad para ser elegido</nombre_subtema0>
+		<cantidadporsubtema0>28</cantidadporsubtema0>
+		<valorporsubtema0>13</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>13</idt0>
+		<idsubtema0>42</idsubtema0>
+		<nombre_subtema0>Libertad de asociación</nombre_subtema0>
+		<cantidadporsubtema0>14</cantidadporsubtema0>
+		<valorporsubtema0>7</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>13</idt0>
+		<idsubtema0>43</idsubtema0>
+		<nombre_subtema0>Competencia igual por cargos públicos</nombre_subtema0>
+		<cantidadporsubtema0>23</cantidadporsubtema0>
+		<valorporsubtema0>11</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>14</idt0>
+		<idsubtema0>31</idsubtema0>
+		<nombre_subtema0>Separación y equilibrio entre los órganos ejecutivo, legislativo y judicial</nombre_subtema0>
+		<cantidadporsubtema0>66</cantidadporsubtema0>
+		<valorporsubtema0>26</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>14</idt0>
+		<idsubtema0>32</idsubtema0>
+		<nombre_subtema0>Parlamento representativo y con pluralismo político</nombre_subtema0>
+		<cantidadporsubtema0>24</cantidadporsubtema0>
+		<valorporsubtema0>9</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>14</idt0>
+		<idsubtema0>33</idsubtema0>
+		<nombre_subtema0>Consolidación del estado de derecho o respeto a la ley</nombre_subtema0>
+		<cantidadporsubtema0>258</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>14</idt0>
+		<idsubtema0>34</idsubtema0>
+		<nombre_subtema0>Igualdad de todos los ciudadanos ante la ley</nombre_subtema0>
+		<cantidadporsubtema0>220</cantidadporsubtema0>
+		<valorporsubtema0>85</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>14</idt0>
+		<idsubtema0>35</idsubtema0>
+		<nombre_subtema0>El poder judicial es efectivamente independiente</nombre_subtema0>
+		<cantidadporsubtema0>135</cantidadporsubtema0>
+		<valorporsubtema0>52</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>14</idt0>
+		<idsubtema0>36</idsubtema0>
+		<nombre_subtema0>Participación de los ciudadanos en las decisiones políticas</nombre_subtema0>
+		<cantidadporsubtema0>113</cantidadporsubtema0>
+		<valorporsubtema0>44</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>14</idt0>
+		<idsubtema0>37</idsubtema0>
+		<nombre_subtema0>Participación de los ciudadanos en el diseño de políticas públicas</nombre_subtema0>
+		<cantidadporsubtema0>66</cantidadporsubtema0>
+		<valorporsubtema0>26</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>14</idt0>
+		<idsubtema0>38</idsubtema0>
+		<nombre_subtema0>Delimitación de circunscripciones</nombre_subtema0>
+		<cantidadporsubtema0>5</cantidadporsubtema0>
+		<valorporsubtema0>2</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>15</idt0>
+		<idsubtema0>46</idsubtema0>
+		<nombre_subtema0>La acción de lo representantes está jurídicamente limitada a los deseos de los representados</nombre_subtema0>
+		<cantidadporsubtema0>68</cantidadporsubtema0>
+		<valorporsubtema0>40</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>15</idt0>
+		<idsubtema0>47</idsubtema0>
+		<nombre_subtema0>Los representantes disponen de recursos para exigir que se respeten sus decisiones</nombre_subtema0>
+		<cantidadporsubtema0>54</cantidadporsubtema0>
+		<valorporsubtema0>32</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>15</idt0>
+		<idsubtema0>48</idsubtema0>
+		<nombre_subtema0>Rendición de cuentas del uso de recursos públicos</nombre_subtema0>
+		<cantidadporsubtema0>168</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>16</idt0>
+		<idsubtema0>49</idsubtema0>
+		<nombre_subtema0>Qué es el CENSO </nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>13</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>16</idt0>
+		<idsubtema0>50</idsubtema0>
+		<nombre_subtema0>Cómo se hace un CENSO</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>13</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>16</idt0>
+		<idsubtema0>51</idsubtema0>
+		<nombre_subtema0>Cuándo se realiza </nombre_subtema0>
+		<cantidadporsubtema0>8</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>17</idt0>
+		<idsubtema0>52</idsubtema0>
+		<nombre_subtema0>Administración, políticas </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>17</idt0>
+		<idsubtema0>53</idsubtema0>
+		<nombre_subtema0>Registros electorales </nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>33</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>17</idt0>
+		<idsubtema0>54</idsubtema0>
+		<nombre_subtema0>Situación económica y social </nombre_subtema0>
+		<cantidadporsubtema0>3</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>17</idt0>
+		<idsubtema0>55</idsubtema0>
+		<nombre_subtema0>Situación temas estratégicos </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>17</idt0>
+		<idsubtema0>56</idsubtema0>
+		<nombre_subtema0>Investigación </nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>33</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>17</idt0>
+		<idsubtema0>57</idsubtema0>
+		<nombre_subtema0>Comercio, industrias, planificación </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>17</idt0>
+		<idsubtema0>58</idsubtema0>
+		<nombre_subtema0>Distribución de recursos financieros </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>18</idt0>
+		<idsubtema0>59</idsubtema0>
+		<nombre_subtema0>Censo de vivienda</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>18</idt0>
+		<idsubtema0>60</idsubtema0>
+		<nombre_subtema0>Censo agropecuario</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>18</idt0>
+		<idsubtema0>61</idsubtema0>
+		<nombre_subtema0>Censo de establecimientos económicos</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>19</idt0>
+		<idsubtema0>62</idsubtema0>
+		<nombre_subtema0>Base legal del censo </nombre_subtema0>
+		<cantidadporsubtema0>3</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>19</idt0>
+		<idsubtema0>63</idsubtema0>
+		<nombre_subtema0>Presupuesto </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>19</idt0>
+		<idsubtema0>64</idsubtema0>
+		<nombre_subtema0>Cronograma </nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>33</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>19</idt0>
+		<idsubtema0>65</idsubtema0>
+		<nombre_subtema0>Organización administrativa</nombre_subtema0>
+		<cantidadporsubtema0>3</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>19</idt0>
+		<idsubtema0>66</idsubtema0>
+		<nombre_subtema0>Actualización cartográfica</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>67</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>19</idt0>
+		<idsubtema0>67</idsubtema0>
+		<nombre_subtema0>Programa de tabulación</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>19</idt0>
+		<idsubtema0>68</idsubtema0>
+		<nombre_subtema0>Preparación de la Boleta o cuestionario</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>33</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>19</idt0>
+		<idsubtema0>69</idsubtema0>
+		<nombre_subtema0>Piloto</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>33</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>19</idt0>
+		<idsubtema0>70</idsubtema0>
+		<nombre_subtema0>Selección y formación del personal</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>33</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>20</idt0>
+		<idsubtema0>71</idsubtema0>
+		<nombre_subtema0>Universalizar el acceso a la educación</nombre_subtema0>
+		<cantidadporsubtema0>3</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>20</idt0>
+		<idsubtema0>72</idsubtema0>
+		<nombre_subtema0>Instalar laboratorios de ciencia y tecnología con acceso a Internet en todas las Unidades Educativas del país.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>20</idt0>
+		<idsubtema0>73</idsubtema0>
+		<nombre_subtema0>Desarrollar programas nacionales que vinculen la educación superior con prácticas profesionales en el sector público y las empresas estatales.</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>33</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>21</idt0>
+		<idsubtema0>74</idsubtema0>
+		<nombre_subtema0>Construcción y equipamiento de los hospitales de segundo y tercer nivel, así como los Institutos de cuarto nivel de atención, Contar con nuevos ítems </nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>21</idt0>
+		<idsubtema0>75</idsubtema0>
+		<nombre_subtema0>Consolidar y fortalecer los centros de radioterapia</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>21</idt0>
+		<idsubtema0>76</idsubtema0>
+		<nombre_subtema0>Construcción y equipamiento de Hospitales Materno infantiles,</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>21</idt0>
+		<idsubtema0>77</idsubtema0>
+		<nombre_subtema0>Crear programas destinados a la educación en salud sexual y reproductiva</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>21</idt0>
+		<idsubtema0>78</idsubtema0>
+		<nombre_subtema0>Instaurar en el país el chequeo médico obligatorio en el mes del cumpleaños de cada uno de los bolivianos</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>21</idt0>
+		<idsubtema0>79</idsubtema0>
+		<nombre_subtema0>Reducir el sobrepeso de la población</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>22</idt0>
+		<idsubtema0>80</idsubtema0>
+		<nombre_subtema0>Modernizar la gestión judicial e introducir tecnologías de la información y comunicación que permitan agilizar los procesos judiciales</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>22</idt0>
+		<idsubtema0>81</idsubtema0>
+		<nombre_subtema0>Incrementar el número de procesos judiciales en todas las materias: civil-comercial, penal, familiar, niñez y adolescencia, coactivo fiscal, violencia, anticorrupción y laboral, con énfasis  en los casos de feminicidios y violencia hacia las mujeres, niñas y adolescentes</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>22</idt0>
+		<idsubtema0>82</idsubtema0>
+		<nombre_subtema0>Selección de autoridades judiciales bajo criterios de transparencia y meritocracia,</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>22</idt0>
+		<idsubtema0>83</idsubtema0>
+		<nombre_subtema0>Ampliar la infraestructura de centros penitenciarios a lo largo del país,</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>22</idt0>
+		<idsubtema0>84</idsubtema0>
+		<nombre_subtema0>Nueva normativa para viabilizar la sanción penal, mejorar las capacidades de los servidores públicos del Ministerio Público, Policía Boliviana, Defensa Pública y Órgano Judicial.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>23</idt0>
+		<idsubtema0>85</idsubtema0>
+		<nombre_subtema0>Mayor inversión en seguridad ciudadana, específicamente para la lucha contra la violencia hacia las mujeres, niñas y adolescentes. </nombre_subtema0>
+		<cantidadporsubtema0>4</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>23</idt0>
+		<idsubtema0>86</idsubtema0>
+		<nombre_subtema0>Más programas y proyectos dirigidos a la prevención y registro de crímenes de violencia contra la mujer</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>25</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>23</idt0>
+		<idsubtema0>87</idsubtema0>
+		<nombre_subtema0>Construcción de centros integrales de atención para víctimas de violencia y programas de sensibilización de trato a víctimas de violencia</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>23</idt0>
+		<idsubtema0>88</idsubtema0>
+		<nombre_subtema0>Incorporar mecanismos que garanticen la transparencia en las funciones que realiza la Policía, e implementar procedimientos que aseguren la selección de agentes policiales</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>23</idt0>
+		<idsubtema0>89</idsubtema0>
+		<nombre_subtema0>Mejorar las condiciones del personal en los puestos militares</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>24</idt0>
+		<idsubtema0>90</idsubtema0>
+		<nombre_subtema0>Crear incentivos para ampliar su incorporación al mundo laboral y entrarán en esquemas de protección social </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>24</idt0>
+		<idsubtema0>91</idsubtema0>
+		<nombre_subtema0>Promover la participación de la mujer dentro de la sociedad y la economía,</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>25</idt0>
+		<idsubtema0>92</idsubtema0>
+		<nombre_subtema0>Promover proyectos de infraestructura y programas específicos para personas con capacidades diferentes o de la tercera edad.</nombre_subtema0>
+		<cantidadporsubtema0>7</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>25</idt0>
+		<idsubtema0>93</idsubtema0>
+		<nombre_subtema0>Difundir, sensibilizar y Promocionar la Declaración sobre los Derechos de los Pueblos Indígenas</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>14</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>25</idt0>
+		<idsubtema0>94</idsubtema0>
+		<nombre_subtema0>Apoyar la aplicación mundial de la Declaración sobre los Derechos de los Pueblos Indígenas</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>25</idt0>
+		<idsubtema0>95</idsubtema0>
+		<nombre_subtema0>Fomentar la participación de los pueblos indígenas en los procesos de las Naciones Unidas</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>25</idt0>
+		<idsubtema0>96</idsubtema0>
+		<nombre_subtema0>Defensa y promoción de la consulta previa, libre e informada como contribución a la protección y realización los derechos de los pueblos indígenas.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>26</idt0>
+		<idsubtema0>97</idsubtema0>
+		<nombre_subtema0>Mantener la política de bonos, aportando a los ingresos de los hogares más vulnerables.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>27</idt0>
+		<idsubtema0>98</idsubtema0>
+		<nombre_subtema0>Implementar sistemas de información y comunicación para control y monitoreo de contaminación y daños ambientales </nombre_subtema0>
+		<cantidadporsubtema0>3</cantidadporsubtema0>
+		<valorporsubtema0>60</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>27</idt0>
+		<idsubtema0>99</idsubtema0>
+		<nombre_subtema0>Para el periodo 2020 - 2025 es necesario implementar un Plan Nacional Para el Bosque Seco Chiquitano denominado “8 Raíces de Vida para Restaurar y Fortalecer nuestros Bosques y la biodiversidad”</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>27</idt0>
+		<idsubtema0>100</idsubtema0>
+		<nombre_subtema0>Desarrollar la CAMPAÑA NACIONAL BOSQUE VIVO HOGAR DE TODOS en el marco de un Proyecto de Forestación y Reforestación masiva en las áreas afectadas por incendios</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>20</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>27</idt0>
+		<idsubtema0>101</idsubtema0>
+		<nombre_subtema0>Desarrollar un Plan y un marco normativo y de regulación de la conservación y el uso de los componentes de los ecosistemas amazónicos y chiquitanos</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>20</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>27</idt0>
+		<idsubtema0>102</idsubtema0>
+		<nombre_subtema0>Fortalecer las Áreas Protegidas respetando los fines y objetivos de las mismas correspondientes del Sistema Nacional, Departamental, y Municipal de Áreas Protegidas.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>27</idt0>
+		<idsubtema0>103</idsubtema0>
+		<nombre_subtema0>Consolidar procesos de gestión integral de residuos sólidos </nombre_subtema0>
+		<cantidadporsubtema0>5</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>104</idsubtema0>
+		<nombre_subtema0>Reactivar la economía y el aparato productivo </nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>105</idsubtema0>
+		<nombre_subtema0>Digitalización de comercio, comercio de bienes y servicios tecnológicos.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>106</idsubtema0>
+		<nombre_subtema0>ii. Dinamizar negocios basados en operaciones confiables y gestionadas con seguridad y soporte financiero regulado y normado.</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>107</idsubtema0>
+		<nombre_subtema0>iii. Proteger los datos e información de nuestros actores comerciales y financieros con un sistema de seguridad cibernética nacional en el marco de la soberanía tecnológica.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>108</idsubtema0>
+		<nombre_subtema0>iv. Desarrollo de marcos normativos y mecanismos institucionales sobre incorporación de sistemas informáticos y tecnologías de información asociados a las inversiones y el comercio</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>109</idsubtema0>
+		<nombre_subtema0>Fomentar el desarrollo económico y social, preservando la estabilidad macroeconómica,</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>110</idsubtema0>
+		<nombre_subtema0>Fortalecer la industrialización en Bolivia y mantener un crecimiento económico sostenido; la meta en 2025 es un PIB nominal cercano a 60.000 millones de dólares o un PIB per cápita superior a 5.000 de dólares. </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>111</idsubtema0>
+		<nombre_subtema0>Garantizar la sostenibilidad de la deuda pública</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>112</idsubtema0>
+		<nombre_subtema0>Desarrollar estrategias de articulación e integración económica y sectorial (agropecuaria, agroindustria, industria manufacturera, servicios, turismo, etc.),</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>113</idsubtema0>
+		<nombre_subtema0>Desarrollar mecanismos de integración económica regional,  con una política de incentivos tributarios selectivos para la exportación de productos con valor agregado</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>114</idsubtema0>
+		<nombre_subtema0>Establecer una política arancelaria dinámica, que responda a las necesidades del producción, estableciendo un comité público – privado, encargado de revisar mensualmente los aranceles</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>115</idsubtema0>
+		<nombre_subtema0>Desarrollar incentivos para la inversión privada (nacional o extranjera), entre estos incentivos se pueden mencionar la exención temporal de impuestos,</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>116</idsubtema0>
+		<nombre_subtema0>Lograr la desburocratización y facilitación de trámites en entidades encargadas de fiscalizar la producción</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>28</idt0>
+		<idsubtema0>117</idsubtema0>
+		<nombre_subtema0>Suscribir acuerdos específicos de protección de inversiones, ya sea con inversionistas o con países, respetando la Constitución Boliviana</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>29</idt0>
+		<idsubtema0>118</idsubtema0>
+		<nombre_subtema0>Llegar, en 2025, a una pobreza extrema del 5%, es decir, lograr su reducción, en los próximos cinco años, en diez puntos porcentuales</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>29</idt0>
+		<idsubtema0>119</idsubtema0>
+		<nombre_subtema0>Incrementar la cobertura del servicio de agua potable al 96% y saneamiento básico al 80%, </nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>29</idt0>
+		<idsubtema0>120</idsubtema0>
+		<nombre_subtema0>Dotar de alcantarillado a las zonas urbanas y de saneamiento mejorado al área rural del país, a través del programa "Mi Alcantarillado".</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>29</idt0>
+		<idsubtema0>121</idsubtema0>
+		<nombre_subtema0>Implementar la Televisión Digital Abierta en ciudades intermedias</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>29</idt0>
+		<idsubtema0>122</idsubtema0>
+		<nombre_subtema0>Incrementar la cobertura del servicio de telefonía móvil e internet al 100% en todas las regiones y localidades del país, con tarifas reducidas.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>29</idt0>
+		<idsubtema0>123</idsubtema0>
+		<nombre_subtema0>Alcanzar una cobertura de gas domiciliario del 90% en las grandes ciudades y ciudades intermedias.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>29</idt0>
+		<idsubtema0>124</idsubtema0>
+		<nombre_subtema0>Disminuir a 9% la incidencia de desnutrición crónica en niños y niñas menores de cinco años, disminuir a 30% la prevalencia de anemia en niños y niñas menores de cinco años e incrementar la lactancia materna a 84%.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>29</idt0>
+		<idsubtema0>125</idsubtema0>
+		<nombre_subtema0>Apoyar la alimentación complementaria en las escuelas a lo largo de al menos 150 días al año.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>30</idt0>
+		<idsubtema0>126</idsubtema0>
+		<nombre_subtema0>normativa para la combinación estudio-trabajo,</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>30</idt0>
+		<idsubtema0>127</idsubtema0>
+		<nombre_subtema0>implementaremos políticas fiscales, financieras y de incentivo para la creación de fuentes de trabajo</nombre_subtema0>
+		<cantidadporsubtema0>4</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>30</idt0>
+		<idsubtema0>128</idsubtema0>
+		<nombre_subtema0>plantear esquemas tributarios adecuados y progresivos para impulsar la generación de empleo de calidad,</nombre_subtema0>
+		<cantidadporsubtema0>4</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>30</idt0>
+		<idsubtema0>129</idsubtema0>
+		<nombre_subtema0>incentivos para ampliar su incorporación al mundo laboral y entrarán en esquemas de protección social para la mujer</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>25</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>130</idsubtema0>
+		<nombre_subtema0>Aumentar del tamaño de la producción por inversión pública - proyectos de industrialización con altos retornos</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>17</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>131</idsubtema0>
+		<nombre_subtema0>Impulsar la variedad de productos y su posicionamiento en el mercado internacional</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>33</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>132</idsubtema0>
+		<nombre_subtema0>Producción de bienes y servicios que sustituyan las importaciones y aumenten la oferta exportadora.</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>33</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>133</idsubtema0>
+		<nombre_subtema0>Desarrollar la petroquímica, siderurgia, la industria del litio y sus derivados</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>134</idsubtema0>
+		<nombre_subtema0>Producción de hierro de Mutún permitirá a Bolivia ingresar a la era de la siderurgia</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>135</idsubtema0>
+		<nombre_subtema0>Promover los emprendimientos de las industrias digitales será una de nuestras prioridades.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>136</idsubtema0>
+		<nombre_subtema0>Apoyar a la industria naciente con incentivos (premios a la innovación, celeridad en la apertura y disminución de los trámites burocráticos, así como apoyo a los productores en las áreas de ciencia y tecnología, inocuidad alimentaria, procesos de exportación, importación de insumos, gobierno electrónico para tributación y obligaciones laborales)</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>17</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>137</idsubtema0>
+		<nombre_subtema0>Mejores condiciones productivas y tecnológicas para los pequeños y medianos productores del área rural y urbana </nombre_subtema0>
+		<cantidadporsubtema0>6</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>138</idsubtema0>
+		<nombre_subtema0>Expandir la frontera agropecuaria para que nuestros productores puedan producir más alimentos.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>139</idsubtema0>
+		<nombre_subtema0>Transformar las instituciones como SENASAG y SENAVEX </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>32</idt0>
+		<idsubtema0>140</idsubtema0>
+		<nombre_subtema0>Crear una oficina de apoyo al exportador</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>33</idt0>
+		<idsubtema0>141</idsubtema0>
+		<nombre_subtema0>Cambio de la matriz energética (impulsando los proyectos de industrialización de nuestros recursos evaporíticos e hidrocarburíferos, para conformar una industria básica en el país: química, siderúrgica, petroquímica) (logrando un mayor uso de plantas hidroeléctricas y de energías alternativas (solar, eólica y biomasa)</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>33</idt0>
+		<idsubtema0>142</idsubtema0>
+		<nombre_subtema0>Especializarnos e insertarnos en los primeros eslabones de la industrialización de baterías</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>33</idt0>
+		<idsubtema0>143</idsubtema0>
+		<nombre_subtema0>Industrialización del litio boliviano</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>33</idt0>
+		<idsubtema0>144</idsubtema0>
+		<nombre_subtema0>Exportar la energía eléctrica a nuestros vecinos</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>33</idt0>
+		<idsubtema0>145</idsubtema0>
+		<nombre_subtema0>Producción de etanol y continuar con la producción de biocombustibles (bio-diésel). (Reducir la importación del diésel oíl y cubrir el consumo interno con la puesta en marcha del Proyecto de Biodiesel responsable y equilibrada con el medio ambiente)</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>33</idt0>
+		<idsubtema0>146</idsubtema0>
+		<nombre_subtema0>Asegurar que todas las bolivianas y los bolivianos cuenten con servicio eléctrico</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>33</idt0>
+		<idsubtema0>147</idsubtema0>
+		<nombre_subtema0>Incrementar las reservas de gas natural a 20 TCF, (mediante inversiones realizadas en varios proyectos de exploración y perforación de pozos)</nombre_subtema0>
+		<cantidadporsubtema0>1</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>34</idt0>
+		<idsubtema0>148</idsubtema0>
+		<nombre_subtema0>Realizar inversiones que permitan incrementar la producción de minerales (yeso, zinc y otros) </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>34</idt0>
+		<idsubtema0>149</idsubtema0>
+		<nombre_subtema0>Incrementar las exportaciones de minerales con un proceso de agregación de valor.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>34</idt0>
+		<idsubtema0>150</idsubtema0>
+		<nombre_subtema0>Montar plantas de fundición y refinación de minerales, y poner en funcionamiento la Planta Siderúrgica del Mutún.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>34</idt0>
+		<idsubtema0>151</idsubtema0>
+		<nombre_subtema0>Consolidar la industrialización del litio boliviano diversificando la matriz productiva del pais.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>34</idt0>
+		<idsubtema0>152</idsubtema0>
+		<nombre_subtema0>Consolidar los mercados de exportación para generar nuevas fuentes de ingresos.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>34</idt0>
+		<idsubtema0>153</idsubtema0>
+		<nombre_subtema0>Una eficiente Gobernanza de los recursos hídricos que permita la gestión eficiente y sustentable de los mismos y así como la prevención de conflictos y su solución.</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>34</idt0>
+		<idsubtema0>154</idsubtema0>
+		<nombre_subtema0>Promover el reconocimiento del derecho de los pueblos indígenas de participar activamente en la toma de decisiones.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>34</idt0>
+		<idsubtema0>155</idsubtema0>
+		<nombre_subtema0>Promoverá la gestión pública del agua. (Los recursos hídricos constituyen patrimonio común universal de la humanidad y la afectación de éstos constituye un perjuicio para la vida y el planeta por ello no pueden estar en manos privadas)</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>36</idt0>
+		<idsubtema0>156</idsubtema0>
+		<nombre_subtema0>Promocionar un modelo de combate a las drogas basado en el respeto a los derechos humanos, la concertación social y la corresponsabilidad de los Estados.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>36</idt0>
+		<idsubtema0>157</idsubtema0>
+		<nombre_subtema0>Fortalecer decididamente la lucha contra el narcotráfico</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>36</idt0>
+		<idsubtema0>158</idsubtema0>
+		<nombre_subtema0>Implementar mecanismos que eviten que el narcotráfico penetre en las estructuras de la Policía Boliviana, Fuerzas Armadas ni en ninguna otra institución pública.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>36</idt0>
+		<idsubtema0>159</idsubtema0>
+		<nombre_subtema0>Impulsar e incrementar los operativos antidroga</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>36</idt0>
+		<idsubtema0>160</idsubtema0>
+		<nombre_subtema0>Continuar con la racionalización y erradicación de cultivos excedentarios de coca.</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>37</idt0>
+		<idsubtema0>161</idsubtema0>
+		<nombre_subtema0>Terminaremos la construcción del Sistema de Contrataciones Electrónico (iniciada por el MEFP en 2018) </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>37</idt0>
+		<idsubtema0>162</idsubtema0>
+		<nombre_subtema0>Fortalecer la administración pública del Estado Plurinacional ( basándose en los principios ético-morales del ama suwa (no robar), ama llulla (no mentir) y ama quella (no ser flojo), cumpliendo el mandato de "Cero Tolerancia a la Corrupción".)</nombre_subtema0>
+		<cantidadporsubtema0>2</cantidadporsubtema0>
+		<valorporsubtema0>50</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>37</idt0>
+		<idsubtema0>163</idsubtema0>
+		<nombre_subtema0>Fortalecer el modelo de gestión que desconcentra las acciones de transparencia, prevención y lucha contra la corrupción en todos los órganos del Estado, empresas públicas, autárquicas y otras.</nombre_subtema0>
+		<cantidadporsubtema0>4</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>38</idt0>
+		<idsubtema0>164</idsubtema0>
+		<nombre_subtema0>Promover la inversión del sector privado en turismo</nombre_subtema0>
+		<cantidadporsubtema0>7</cantidadporsubtema0>
+		<valorporsubtema0>24</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>38</idt0>
+		<idsubtema0>165</idsubtema0>
+		<nombre_subtema0>Promoverlo como un mecanismo de práctica comunitaria</nombre_subtema0>
+		<cantidadporsubtema0>29</cantidadporsubtema0>
+		<valorporsubtema0>100</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>38</idt0>
+		<idsubtema0>166</idsubtema0>
+		<nombre_subtema0>Elaborar y poner en marcha el Plan Integral de Aprovechamiento de la Hidrovía Ichilo-Mamoré-Madera</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>40</idt0>
+		<idsubtema0>167</idsubtema0>
+		<nombre_subtema0>Construir nueva infraestructura deportiva de iniciación, formación y alto rendimiento,</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>40</idt0>
+		<idsubtema0>168</idsubtema0>
+		<nombre_subtema0>Implementar las Escuelas Deportivas Plurinacionales en cada municipio</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>40</idt0>
+		<idsubtema0>169</idsubtema0>
+		<nombre_subtema0>Formar y capacitar a deportistas, técnicos, entrenadores, jueces, médicos y otros actores del deporte a través de la otorgación de becas</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>40</idt0>
+		<idsubtema0>170</idsubtema0>
+		<nombre_subtema0>Implementar el Programa Plurinacional de Alto Rendimiento Deportivo,</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>41</idt0>
+		<idsubtema0>171</idsubtema0>
+		<nombre_subtema0>Nuestra visión estratégica también incluye la transformación del país en un centro de transporte de la región</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>41</idt0>
+		<idsubtema0>172</idsubtema0>
+		<nombre_subtema0>Concluir con las gestiones y el inicio de la construcción del Corredor Ferroviario Bioceánico de Integración,</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>41</idt0>
+		<idsubtema0>173</idsubtema0>
+		<nombre_subtema0>temas de la política exterior (Diplomacia de los pueblos por la paz y la democracia, reforma de la arquitectura financiera mundial y de las instituciones financieras, derechos de los pueblos indígenas, cambio climático y la Madre Tierra, diplomacia del agua, promoción del comercio y las inversiones, atención de las bolivianas y bolivianos en el exterior y ciudadanía universal, revalorización de la hoja de coca, continuar la labor para la reforma de la Organización de las Naciones Unidas y su Consejo de Seguridad, Promoción Comercial, Negociaciones Comerciales Internacionales, Promoción de las Inversiones, acceso a puertos en condiciones favorables para Bolivia.)</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>41</idt0>
+		<idsubtema0>174</idsubtema0>
+		<nombre_subtema0>Promover la investigación y difusión de los múltiples beneficios medicinales y nutricionales de la hoja de coca </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>41</idt0>
+		<idsubtema0>175</idsubtema0>
+		<nombre_subtema0>Desarrollar una diplomacia comercial que nos permita superar barreras no arancelarias en mercados como los Estados Unidos, la Unión Europea y países asiáticos, </nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>41</idt0>
+		<idsubtema0>176</idsubtema0>
+		<nombre_subtema0>Construir en lugares a determinar puertos secos, para que la consolidación y desconsolidación de carga se realice en Bolivia</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	<element>
+		<idt0>41</idt0>
+		<idsubtema0>177</idsubtema0>
+		<nombre_subtema0>Realizar las inversiones portuarias necesarias para que Ilo sea una verdadera alternativa al comercio exterior boliviano</nombre_subtema0>
+		<cantidadporsubtema0>0</cantidadporsubtema0>
+		<valorporsubtema0>0</valorporsubtema0>
+	</element>
+	</subtemas0>
+</root>

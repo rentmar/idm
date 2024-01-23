@@ -1,0 +1,1085 @@
+<root>
+	<element>
+		<cuest1_nomtema>Presentacion de Estatutos de organizaciones politicas</cuest1_nomtema>
+	</element>
+	<element>
+		<cuest1_nomtema>Competencias Jurisdicionales del TSE</cuest1_nomtema>
+	</element>
+	<element>
+		<cuest1_nomtema>Redistribuicion de Escaños</cuest1_nomtema>
+	</element>
+	<element>
+		<cuest1_nomtema>Circunscripciones uninominales</cuest1_nomtema>
+	</element>
+	<element>
+		<cuest1_nomtema>Difusion de encuestas</cuest1_nomtema>
+	</element>
+	<element>
+		<cuest1_nomtema>Inhabilitacion de candidatos</cuest1_nomtema>
+	</element>
+	<element>
+		<cuest1_nomtema>Computo departamental</cuest1_nomtema>
+	</element>
+	<element>
+		<cuest1_nomtema>Padron Electoral</cuest1_nomtema>
+	</element>
+	<element>
+		<cuest1_nomtema>Procedimientos Tecnico Electorales</cuest1_nomtema>
+	</element>
+	<element>
+		<cuest1_nomtema>Financiamiento politico y partidario</cuest1_nomtema>
+	</element>
+	<element>
+		<cuest1_departamento>La Paz</cuest1_departamento>
+		<cuest1_tema>Presentacion de Estatutos de organizaciones politicas</cuest1_tema>
+		<cuest1_canttema>5</cuest1_canttema>
+		<cuest1_radiotema>10</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Santa Cruz</cuest1_departamento>
+		<cuest1_tema>Presentacion de Estatutos de organizaciones politicas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Oruro</cuest1_departamento>
+		<cuest1_tema>Presentacion de Estatutos de organizaciones politicas</cuest1_tema>
+		<cuest1_canttema>1</cuest1_canttema>
+		<cuest1_radiotema>2</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Cochabamba</cuest1_departamento>
+		<cuest1_tema>Presentacion de Estatutos de organizaciones politicas</cuest1_tema>
+		<cuest1_canttema>1</cuest1_canttema>
+		<cuest1_radiotema>2</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Chuquisaca</cuest1_departamento>
+		<cuest1_tema>Presentacion de Estatutos de organizaciones politicas</cuest1_tema>
+		<cuest1_canttema>4</cuest1_canttema>
+		<cuest1_radiotema>8</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Tarija</cuest1_departamento>
+		<cuest1_tema>Presentacion de Estatutos de organizaciones politicas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Beni</cuest1_departamento>
+		<cuest1_tema>Presentacion de Estatutos de organizaciones politicas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Pando</cuest1_departamento>
+		<cuest1_tema>Presentacion de Estatutos de organizaciones politicas</cuest1_tema>
+		<cuest1_canttema>1</cuest1_canttema>
+		<cuest1_radiotema>2</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Potosi</cuest1_departamento>
+		<cuest1_tema>Presentacion de Estatutos de organizaciones politicas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>La Paz</cuest1_departamento>
+		<cuest1_tema>Competencias Jurisdicionales del TSE</cuest1_tema>
+		<cuest1_canttema>11</cuest1_canttema>
+		<cuest1_radiotema>5</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Santa Cruz</cuest1_departamento>
+		<cuest1_tema>Competencias Jurisdicionales del TSE</cuest1_tema>
+		<cuest1_canttema>1</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Oruro</cuest1_departamento>
+		<cuest1_tema>Competencias Jurisdicionales del TSE</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Cochabamba</cuest1_departamento>
+		<cuest1_tema>Competencias Jurisdicionales del TSE</cuest1_tema>
+		<cuest1_canttema>19</cuest1_canttema>
+		<cuest1_radiotema>9</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Chuquisaca</cuest1_departamento>
+		<cuest1_tema>Competencias Jurisdicionales del TSE</cuest1_tema>
+		<cuest1_canttema>22</cuest1_canttema>
+		<cuest1_radiotema>10</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Tarija</cuest1_departamento>
+		<cuest1_tema>Competencias Jurisdicionales del TSE</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Beni</cuest1_departamento>
+		<cuest1_tema>Competencias Jurisdicionales del TSE</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Pando</cuest1_departamento>
+		<cuest1_tema>Competencias Jurisdicionales del TSE</cuest1_tema>
+		<cuest1_canttema>6</cuest1_canttema>
+		<cuest1_radiotema>3</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Potosi</cuest1_departamento>
+		<cuest1_tema>Competencias Jurisdicionales del TSE</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>La Paz</cuest1_departamento>
+		<cuest1_tema>Redistribuicion de Escaños</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Santa Cruz</cuest1_departamento>
+		<cuest1_tema>Redistribuicion de Escaños</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Oruro</cuest1_departamento>
+		<cuest1_tema>Redistribuicion de Escaños</cuest1_tema>
+		<cuest1_canttema>1</cuest1_canttema>
+		<cuest1_radiotema>10</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Cochabamba</cuest1_departamento>
+		<cuest1_tema>Redistribuicion de Escaños</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Chuquisaca</cuest1_departamento>
+		<cuest1_tema>Redistribuicion de Escaños</cuest1_tema>
+		<cuest1_canttema>1</cuest1_canttema>
+		<cuest1_radiotema>10</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Tarija</cuest1_departamento>
+		<cuest1_tema>Redistribuicion de Escaños</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Beni</cuest1_departamento>
+		<cuest1_tema>Redistribuicion de Escaños</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Pando</cuest1_departamento>
+		<cuest1_tema>Redistribuicion de Escaños</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Potosi</cuest1_departamento>
+		<cuest1_tema>Redistribuicion de Escaños</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>La Paz</cuest1_departamento>
+		<cuest1_tema>Circunscripciones uninominales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Santa Cruz</cuest1_departamento>
+		<cuest1_tema>Circunscripciones uninominales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Oruro</cuest1_departamento>
+		<cuest1_tema>Circunscripciones uninominales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Cochabamba</cuest1_departamento>
+		<cuest1_tema>Circunscripciones uninominales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Chuquisaca</cuest1_departamento>
+		<cuest1_tema>Circunscripciones uninominales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Tarija</cuest1_departamento>
+		<cuest1_tema>Circunscripciones uninominales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Beni</cuest1_departamento>
+		<cuest1_tema>Circunscripciones uninominales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Pando</cuest1_departamento>
+		<cuest1_tema>Circunscripciones uninominales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Potosi</cuest1_departamento>
+		<cuest1_tema>Circunscripciones uninominales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>La Paz</cuest1_departamento>
+		<cuest1_tema>Difusion de encuestas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Santa Cruz</cuest1_departamento>
+		<cuest1_tema>Difusion de encuestas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Oruro</cuest1_departamento>
+		<cuest1_tema>Difusion de encuestas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Cochabamba</cuest1_departamento>
+		<cuest1_tema>Difusion de encuestas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Chuquisaca</cuest1_departamento>
+		<cuest1_tema>Difusion de encuestas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Tarija</cuest1_departamento>
+		<cuest1_tema>Difusion de encuestas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Beni</cuest1_departamento>
+		<cuest1_tema>Difusion de encuestas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Pando</cuest1_departamento>
+		<cuest1_tema>Difusion de encuestas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Potosi</cuest1_departamento>
+		<cuest1_tema>Difusion de encuestas</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>La Paz</cuest1_departamento>
+		<cuest1_tema>Inhabilitacion de candidatos</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Santa Cruz</cuest1_departamento>
+		<cuest1_tema>Inhabilitacion de candidatos</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Oruro</cuest1_departamento>
+		<cuest1_tema>Inhabilitacion de candidatos</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Cochabamba</cuest1_departamento>
+		<cuest1_tema>Inhabilitacion de candidatos</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Chuquisaca</cuest1_departamento>
+		<cuest1_tema>Inhabilitacion de candidatos</cuest1_tema>
+		<cuest1_canttema>1</cuest1_canttema>
+		<cuest1_radiotema>10</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Tarija</cuest1_departamento>
+		<cuest1_tema>Inhabilitacion de candidatos</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Beni</cuest1_departamento>
+		<cuest1_tema>Inhabilitacion de candidatos</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Pando</cuest1_departamento>
+		<cuest1_tema>Inhabilitacion de candidatos</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Potosi</cuest1_departamento>
+		<cuest1_tema>Inhabilitacion de candidatos</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>La Paz</cuest1_departamento>
+		<cuest1_tema>Computo departamental</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Santa Cruz</cuest1_departamento>
+		<cuest1_tema>Computo departamental</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Oruro</cuest1_departamento>
+		<cuest1_tema>Computo departamental</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Cochabamba</cuest1_departamento>
+		<cuest1_tema>Computo departamental</cuest1_tema>
+		<cuest1_canttema>2</cuest1_canttema>
+		<cuest1_radiotema>7</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Chuquisaca</cuest1_departamento>
+		<cuest1_tema>Computo departamental</cuest1_tema>
+		<cuest1_canttema>2</cuest1_canttema>
+		<cuest1_radiotema>7</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Tarija</cuest1_departamento>
+		<cuest1_tema>Computo departamental</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Beni</cuest1_departamento>
+		<cuest1_tema>Computo departamental</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Pando</cuest1_departamento>
+		<cuest1_tema>Computo departamental</cuest1_tema>
+		<cuest1_canttema>3</cuest1_canttema>
+		<cuest1_radiotema>10</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Potosi</cuest1_departamento>
+		<cuest1_tema>Computo departamental</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>La Paz</cuest1_departamento>
+		<cuest1_tema>Padron Electoral</cuest1_tema>
+		<cuest1_canttema>3</cuest1_canttema>
+		<cuest1_radiotema>6</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Santa Cruz</cuest1_departamento>
+		<cuest1_tema>Padron Electoral</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Oruro</cuest1_departamento>
+		<cuest1_tema>Padron Electoral</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Cochabamba</cuest1_departamento>
+		<cuest1_tema>Padron Electoral</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Chuquisaca</cuest1_departamento>
+		<cuest1_tema>Padron Electoral</cuest1_tema>
+		<cuest1_canttema>5</cuest1_canttema>
+		<cuest1_radiotema>10</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Tarija</cuest1_departamento>
+		<cuest1_tema>Padron Electoral</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Beni</cuest1_departamento>
+		<cuest1_tema>Padron Electoral</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Pando</cuest1_departamento>
+		<cuest1_tema>Padron Electoral</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Potosi</cuest1_departamento>
+		<cuest1_tema>Padron Electoral</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>La Paz</cuest1_departamento>
+		<cuest1_tema>Procedimientos Tecnico Electorales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Santa Cruz</cuest1_departamento>
+		<cuest1_tema>Procedimientos Tecnico Electorales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Oruro</cuest1_departamento>
+		<cuest1_tema>Procedimientos Tecnico Electorales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Cochabamba</cuest1_departamento>
+		<cuest1_tema>Procedimientos Tecnico Electorales</cuest1_tema>
+		<cuest1_canttema>1</cuest1_canttema>
+		<cuest1_radiotema>3</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Chuquisaca</cuest1_departamento>
+		<cuest1_tema>Procedimientos Tecnico Electorales</cuest1_tema>
+		<cuest1_canttema>1</cuest1_canttema>
+		<cuest1_radiotema>3</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Tarija</cuest1_departamento>
+		<cuest1_tema>Procedimientos Tecnico Electorales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Beni</cuest1_departamento>
+		<cuest1_tema>Procedimientos Tecnico Electorales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Pando</cuest1_departamento>
+		<cuest1_tema>Procedimientos Tecnico Electorales</cuest1_tema>
+		<cuest1_canttema>4</cuest1_canttema>
+		<cuest1_radiotema>10</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Potosi</cuest1_departamento>
+		<cuest1_tema>Procedimientos Tecnico Electorales</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>La Paz</cuest1_departamento>
+		<cuest1_tema>Financiamiento politico y partidario</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Santa Cruz</cuest1_departamento>
+		<cuest1_tema>Financiamiento politico y partidario</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Oruro</cuest1_departamento>
+		<cuest1_tema>Financiamiento politico y partidario</cuest1_tema>
+		<cuest1_canttema>1</cuest1_canttema>
+		<cuest1_radiotema>10</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Cochabamba</cuest1_departamento>
+		<cuest1_tema>Financiamiento politico y partidario</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Chuquisaca</cuest1_departamento>
+		<cuest1_tema>Financiamiento politico y partidario</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Tarija</cuest1_departamento>
+		<cuest1_tema>Financiamiento politico y partidario</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Beni</cuest1_departamento>
+		<cuest1_tema>Financiamiento politico y partidario</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Pando</cuest1_departamento>
+		<cuest1_tema>Financiamiento politico y partidario</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest1_departamento>Potosi</cuest1_departamento>
+		<cuest1_tema>Financiamiento politico y partidario</cuest1_tema>
+		<cuest1_canttema>0</cuest1_canttema>
+		<cuest1_radiotema>0</cuest1_radiotema>
+	</element>
+	<element>
+		<cuest2_nomtema>Ejercicio en libertad de derechos políticos</cuest2_nomtema>
+	</element>
+	<element>
+		<cuest2_nomtema>Inclusión política</cuest2_nomtema>
+	</element>
+	<element>
+		<cuest2_nomtema>Participación en el ámbito electoral</cuest2_nomtema>
+	</element>
+	<element>
+		<cuest2_nomtema>Integración de los ciudadanos en la definición y gestión del Estado</cuest2_nomtema>
+	</element>
+	<element>
+		<cuest2_nomtema>Instituciones</cuest2_nomtema>
+	</element>
+	<element>
+		<cuest2_departamento>La Paz</cuest2_departamento>
+		<cuest2_tema>Ejercicio en libertad de derechos políticos</cuest2_tema>
+		<cuest2_canttema>227</cuest2_canttema>
+		<cuest2_radiotema>6</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Santa Cruz</cuest2_departamento>
+		<cuest2_tema>Ejercicio en libertad de derechos políticos</cuest2_tema>
+		<cuest2_canttema>146</cuest2_canttema>
+		<cuest2_radiotema>4</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Oruro</cuest2_departamento>
+		<cuest2_tema>Ejercicio en libertad de derechos políticos</cuest2_tema>
+		<cuest2_canttema>46</cuest2_canttema>
+		<cuest2_radiotema>1</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Cochabamba</cuest2_departamento>
+		<cuest2_tema>Ejercicio en libertad de derechos políticos</cuest2_tema>
+		<cuest2_canttema>353</cuest2_canttema>
+		<cuest2_radiotema>10</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Chuquisaca</cuest2_departamento>
+		<cuest2_tema>Ejercicio en libertad de derechos políticos</cuest2_tema>
+		<cuest2_canttema>122</cuest2_canttema>
+		<cuest2_radiotema>3</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Tarija</cuest2_departamento>
+		<cuest2_tema>Ejercicio en libertad de derechos políticos</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Beni</cuest2_departamento>
+		<cuest2_tema>Ejercicio en libertad de derechos políticos</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Pando</cuest2_departamento>
+		<cuest2_tema>Ejercicio en libertad de derechos políticos</cuest2_tema>
+		<cuest2_canttema>22</cuest2_canttema>
+		<cuest2_radiotema>1</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Potosi</cuest2_departamento>
+		<cuest2_tema>Ejercicio en libertad de derechos políticos</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>La Paz</cuest2_departamento>
+		<cuest2_tema>Inclusión política</cuest2_tema>
+		<cuest2_canttema>12</cuest2_canttema>
+		<cuest2_radiotema>5</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Santa Cruz</cuest2_departamento>
+		<cuest2_tema>Inclusión política</cuest2_tema>
+		<cuest2_canttema>21</cuest2_canttema>
+		<cuest2_radiotema>9</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Oruro</cuest2_departamento>
+		<cuest2_tema>Inclusión política</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Cochabamba</cuest2_departamento>
+		<cuest2_tema>Inclusión política</cuest2_tema>
+		<cuest2_canttema>23</cuest2_canttema>
+		<cuest2_radiotema>10</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Chuquisaca</cuest2_departamento>
+		<cuest2_tema>Inclusión política</cuest2_tema>
+		<cuest2_canttema>7</cuest2_canttema>
+		<cuest2_radiotema>3</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Tarija</cuest2_departamento>
+		<cuest2_tema>Inclusión política</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Beni</cuest2_departamento>
+		<cuest2_tema>Inclusión política</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Pando</cuest2_departamento>
+		<cuest2_tema>Inclusión política</cuest2_tema>
+		<cuest2_canttema>5</cuest2_canttema>
+		<cuest2_radiotema>2</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Potosi</cuest2_departamento>
+		<cuest2_tema>Inclusión política</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>La Paz</cuest2_departamento>
+		<cuest2_tema>Participación en el ámbito electoral</cuest2_tema>
+		<cuest2_canttema>109</cuest2_canttema>
+		<cuest2_radiotema>10</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Santa Cruz</cuest2_departamento>
+		<cuest2_tema>Participación en el ámbito electoral</cuest2_tema>
+		<cuest2_canttema>2</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Oruro</cuest2_departamento>
+		<cuest2_tema>Participación en el ámbito electoral</cuest2_tema>
+		<cuest2_canttema>16</cuest2_canttema>
+		<cuest2_radiotema>1</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Cochabamba</cuest2_departamento>
+		<cuest2_tema>Participación en el ámbito electoral</cuest2_tema>
+		<cuest2_canttema>30</cuest2_canttema>
+		<cuest2_radiotema>3</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Chuquisaca</cuest2_departamento>
+		<cuest2_tema>Participación en el ámbito electoral</cuest2_tema>
+		<cuest2_canttema>16</cuest2_canttema>
+		<cuest2_radiotema>1</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Tarija</cuest2_departamento>
+		<cuest2_tema>Participación en el ámbito electoral</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Beni</cuest2_departamento>
+		<cuest2_tema>Participación en el ámbito electoral</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Pando</cuest2_departamento>
+		<cuest2_tema>Participación en el ámbito electoral</cuest2_tema>
+		<cuest2_canttema>9</cuest2_canttema>
+		<cuest2_radiotema>1</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Potosi</cuest2_departamento>
+		<cuest2_tema>Participación en el ámbito electoral</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>La Paz</cuest2_departamento>
+		<cuest2_tema>Integración de los ciudadanos en la definición y gestión del Estado</cuest2_tema>
+		<cuest2_canttema>247</cuest2_canttema>
+		<cuest2_radiotema>10</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Santa Cruz</cuest2_departamento>
+		<cuest2_tema>Integración de los ciudadanos en la definición y gestión del Estado</cuest2_tema>
+		<cuest2_canttema>88</cuest2_canttema>
+		<cuest2_radiotema>4</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Oruro</cuest2_departamento>
+		<cuest2_tema>Integración de los ciudadanos en la definición y gestión del Estado</cuest2_tema>
+		<cuest2_canttema>21</cuest2_canttema>
+		<cuest2_radiotema>1</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Cochabamba</cuest2_departamento>
+		<cuest2_tema>Integración de los ciudadanos en la definición y gestión del Estado</cuest2_tema>
+		<cuest2_canttema>204</cuest2_canttema>
+		<cuest2_radiotema>8</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Chuquisaca</cuest2_departamento>
+		<cuest2_tema>Integración de los ciudadanos en la definición y gestión del Estado</cuest2_tema>
+		<cuest2_canttema>76</cuest2_canttema>
+		<cuest2_radiotema>3</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Tarija</cuest2_departamento>
+		<cuest2_tema>Integración de los ciudadanos en la definición y gestión del Estado</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Beni</cuest2_departamento>
+		<cuest2_tema>Integración de los ciudadanos en la definición y gestión del Estado</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Pando</cuest2_departamento>
+		<cuest2_tema>Integración de los ciudadanos en la definición y gestión del Estado</cuest2_tema>
+		<cuest2_canttema>16</cuest2_canttema>
+		<cuest2_radiotema>1</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Potosi</cuest2_departamento>
+		<cuest2_tema>Integración de los ciudadanos en la definición y gestión del Estado</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>La Paz</cuest2_departamento>
+		<cuest2_tema>Instituciones</cuest2_tema>
+		<cuest2_canttema>12</cuest2_canttema>
+		<cuest2_radiotema>2</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Santa Cruz</cuest2_departamento>
+		<cuest2_tema>Instituciones</cuest2_tema>
+		<cuest2_canttema>41</cuest2_canttema>
+		<cuest2_radiotema>6</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Oruro</cuest2_departamento>
+		<cuest2_tema>Instituciones</cuest2_tema>
+		<cuest2_canttema>2</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Cochabamba</cuest2_departamento>
+		<cuest2_tema>Instituciones</cuest2_tema>
+		<cuest2_canttema>69</cuest2_canttema>
+		<cuest2_radiotema>10</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Chuquisaca</cuest2_departamento>
+		<cuest2_tema>Instituciones</cuest2_tema>
+		<cuest2_canttema>49</cuest2_canttema>
+		<cuest2_radiotema>7</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Tarija</cuest2_departamento>
+		<cuest2_tema>Instituciones</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Beni</cuest2_departamento>
+		<cuest2_tema>Instituciones</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Pando</cuest2_departamento>
+		<cuest2_tema>Instituciones</cuest2_tema>
+		<cuest2_canttema>10</cuest2_canttema>
+		<cuest2_radiotema>1</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest2_departamento>Potosi</cuest2_departamento>
+		<cuest2_tema>Instituciones</cuest2_tema>
+		<cuest2_canttema>0</cuest2_canttema>
+		<cuest2_radiotema>0</cuest2_radiotema>
+	</element>
+	<element>
+		<cuest3_nomtema>Información a la población </cuest3_nomtema>
+	</element>
+	<element>
+		<cuest3_nomtema>Uso de los datos censales</cuest3_nomtema>
+	</element>
+	<element>
+		<cuest3_nomtema>Otros Censos</cuest3_nomtema>
+	</element>
+	<element>
+		<cuest3_nomtema>Etapa Pre Censal </cuest3_nomtema>
+	</element>
+	<element>
+		<cuest3_departamento>La Paz</cuest3_departamento>
+		<cuest3_tema>Información a la población </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Santa Cruz</cuest3_departamento>
+		<cuest3_tema>Información a la población </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Oruro</cuest3_departamento>
+		<cuest3_tema>Información a la población </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Cochabamba</cuest3_departamento>
+		<cuest3_tema>Información a la población </cuest3_tema>
+		<cuest3_canttema>1</cuest3_canttema>
+		<cuest3_radiotema>10</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Chuquisaca</cuest3_departamento>
+		<cuest3_tema>Información a la población </cuest3_tema>
+		<cuest3_canttema>1</cuest3_canttema>
+		<cuest3_radiotema>10</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Tarija</cuest3_departamento>
+		<cuest3_tema>Información a la población </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Beni</cuest3_departamento>
+		<cuest3_tema>Información a la población </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Pando</cuest3_departamento>
+		<cuest3_tema>Información a la población </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Potosi</cuest3_departamento>
+		<cuest3_tema>Información a la población </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>La Paz</cuest3_departamento>
+		<cuest3_tema>Uso de los datos censales</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Santa Cruz</cuest3_departamento>
+		<cuest3_tema>Uso de los datos censales</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Oruro</cuest3_departamento>
+		<cuest3_tema>Uso de los datos censales</cuest3_tema>
+		<cuest3_canttema>1</cuest3_canttema>
+		<cuest3_radiotema>5</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Cochabamba</cuest3_departamento>
+		<cuest3_tema>Uso de los datos censales</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Chuquisaca</cuest3_departamento>
+		<cuest3_tema>Uso de los datos censales</cuest3_tema>
+		<cuest3_canttema>2</cuest3_canttema>
+		<cuest3_radiotema>10</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Tarija</cuest3_departamento>
+		<cuest3_tema>Uso de los datos censales</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Beni</cuest3_departamento>
+		<cuest3_tema>Uso de los datos censales</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Pando</cuest3_departamento>
+		<cuest3_tema>Uso de los datos censales</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Potosi</cuest3_departamento>
+		<cuest3_tema>Uso de los datos censales</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>La Paz</cuest3_departamento>
+		<cuest3_tema>Otros Censos</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Santa Cruz</cuest3_departamento>
+		<cuest3_tema>Otros Censos</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Oruro</cuest3_departamento>
+		<cuest3_tema>Otros Censos</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Cochabamba</cuest3_departamento>
+		<cuest3_tema>Otros Censos</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Chuquisaca</cuest3_departamento>
+		<cuest3_tema>Otros Censos</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Tarija</cuest3_departamento>
+		<cuest3_tema>Otros Censos</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Beni</cuest3_departamento>
+		<cuest3_tema>Otros Censos</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Pando</cuest3_departamento>
+		<cuest3_tema>Otros Censos</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Potosi</cuest3_departamento>
+		<cuest3_tema>Otros Censos</cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>La Paz</cuest3_departamento>
+		<cuest3_tema>Etapa Pre Censal </cuest3_tema>
+		<cuest3_canttema>3</cuest3_canttema>
+		<cuest3_radiotema>10</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Santa Cruz</cuest3_departamento>
+		<cuest3_tema>Etapa Pre Censal </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Oruro</cuest3_departamento>
+		<cuest3_tema>Etapa Pre Censal </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Cochabamba</cuest3_departamento>
+		<cuest3_tema>Etapa Pre Censal </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Chuquisaca</cuest3_departamento>
+		<cuest3_tema>Etapa Pre Censal </cuest3_tema>
+		<cuest3_canttema>2</cuest3_canttema>
+		<cuest3_radiotema>7</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Tarija</cuest3_departamento>
+		<cuest3_tema>Etapa Pre Censal </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Beni</cuest3_departamento>
+		<cuest3_tema>Etapa Pre Censal </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Pando</cuest3_departamento>
+		<cuest3_tema>Etapa Pre Censal </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+	<element>
+		<cuest3_departamento>Potosi</cuest3_departamento>
+		<cuest3_tema>Etapa Pre Censal </cuest3_tema>
+		<cuest3_canttema>0</cuest3_canttema>
+		<cuest3_radiotema>0</cuest3_radiotema>
+	</element>
+</root>
