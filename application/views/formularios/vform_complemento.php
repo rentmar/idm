@@ -51,7 +51,7 @@
 					<input type="hidden" name="idformulario_resp" id="idformulario_resp" value="<?php echo $formulario_resp->idformresp; ?>" >
 				</div>
 			</div>
-
+			<?php echo form_open();?>
 			<div>
 				<div id="accordion">
 					<?php foreach ($familias as $f): ?>
