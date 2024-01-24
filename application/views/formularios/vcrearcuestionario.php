@@ -9,7 +9,7 @@
 					</div>
 					<div id="Caja_de_datos" class="Caja_de_datos">
 
-						<?php echo form_open('formulario/procesarCrearFOrmulario') ?>
+						<?php echo form_open('formulario/procesarCrearFormulario') ?>
 							<div class="form-group">
 								<label for="idformulario">Formulario:</label>
 								<select id="idformulario" name="idformulario" class="form-control">

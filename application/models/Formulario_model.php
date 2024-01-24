@@ -131,6 +131,12 @@ class Formulario_model extends CI_Model
 		$this->db->insert('formulario_respuesta', $data);
 		$id = $this->db->insert_id();
 
+		$data2 = array(
+			'form_resp' => '{}',
+			'rel_idformresp' => $id,
+		);
+		$this->db->insert('formulario_respuesta_cmp', $data2);
+
 
 		if ($this->db->trans_status() === FALSE)
 		{
