@@ -10,7 +10,7 @@
 
 <div class="container">
 	<div class="jumbotron">
-		<h1 class="text-center"><?php //echo $encuesta->uinombre_encuesta; ?></h1>
+		<h1 class="text-center"><?php  echo $formulario_resp->form_nombre; ?></h1>
 	</div>
 </div>
 <div class="container">
@@ -65,9 +65,11 @@
 								<div class="card-body">
 									<div class="card-columns">
 
-										<?php if($f->idflia<5): ?>
+										<?php if($f->idflia < 4): ?>
 											<?php foreach ($subfamilias as $s): ?>
 												<?php if(isset($s->idsubflia)): ?>
+
+													<?php if($s->idflia == $f->idflia ): ?>
 													<div class="card bg-dark ">
 														<div class="card-body text-center">
 															<p class="card-text">
@@ -77,6 +79,8 @@
 															</p>
 														</div>
 													</div>
+													<?php endif;?>
+
 												<?php endif; ?>
 											<?php endforeach; ?>
 										<?php else: ?>

@@ -112,4 +112,17 @@ class Formulario extends CI_Controller{
 			$this->load->view('formularios/vform_complemento', $datos);
 		}
 	}
+
+	public function subfamilia($idsubfamilia)
+	{
+		$idsubflia = $idsubfamilia;
+		echo "subfamilias: ".$idsubflia;
+
+	}
+
+	public function familias($idfamilia){
+		$idflia = $idfamilia;
+		echo "familia: ".$idflia;
+	}
+
 }
