@@ -98,7 +98,7 @@ class Formulario extends CI_Controller{
 		$complemento = $this->Formulario_model->buscarComplementoFormulario($idformulario);
 		$formresp = $this->Formulario_model->getFormularioPorID($idformulario);
 		$subfamilia = $this->Formulario_model->getFamiliaSubfamilia();
-		var_dump($subfamilia);
+		//var_dump($subfamilia);
 		$datos['formulario_resp'] = $formresp;
 		$datos['familias'] = $this->Formulario_model->getFamilias();
 		$datos['subfamilias'] = $subfamilia;

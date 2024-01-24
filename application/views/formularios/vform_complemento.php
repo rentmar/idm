@@ -63,15 +63,34 @@
 							</div>
 							<div id="collapse-<?php echo $f->idflia; ?>" class="collapse" >
 								<div class="card-body">
-									<?php foreach ($subfamilias as $s): ?>
-										<?php if(isset($s->idsubflia)): ?>
-											<?php if($s->rel_idflia == $f->idflia): ?>
-												<a href="">
-													<?php echo $s->nombre_subfamilia; ?>
-												</a>
-											<?php endif; ?>
-										<?php endif;?>
-									<?php endforeach;  ?>
+									<div class="card-columns">
+
+										<?php if($f->idflia<5): ?>
+											<?php foreach ($subfamilias as $s): ?>
+												<?php if(isset($s->idsubflia)): ?>
+													<div class="card bg-dark ">
+														<div class="card-body text-center">
+															<p class="card-text">
+																<a href="<?php echo site_url('formulario/subfamilia/'.$s->idsubflia); ?>">
+																	<?php echo $s->nombre_subfamilia; ?>
+																</a>
+															</p>
+														</div>
+													</div>
+												<?php endif; ?>
+											<?php endforeach; ?>
+										<?php else: ?>
+											<div class="card bg-dark ">
+												<div class="card-body text-center">
+													<p class="card-text">
+														<a href="<?php echo site_url('formulario/familia/'.$f->idflia)?>">
+															<?php echo $f->nombre_familia; ?>
+														</a>
+													</p>
+												</div>
+											</div>
+										<?php endif; ?>
+									</div>
 								</div>
 							</div>
 						</div>
