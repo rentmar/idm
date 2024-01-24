@@ -73,7 +73,7 @@
 													<div class="card bg-dark ">
 														<div class="card-body text-center">
 															<p class="card-text">
-																<a href="<?php echo site_url('formulario/subfamilia/'.$s->idsubflia); ?>">
+																<a href="<?php echo site_url('formulario/subfamilia/'.$formulario_resp->idformresp.'/'.$s->idsubflia); ?>">
 																	<?php echo $s->nombre_subfamilia; ?>
 																</a>
 															</p>
@@ -87,7 +87,7 @@
 											<div class="card bg-dark ">
 												<div class="card-body text-center">
 													<p class="card-text">
-														<a href="<?php echo site_url('formulario/familia/'.$f->idflia)?>">
+														<a href="<?php echo site_url('formulario/familia/'.$formulario_resp->idformresp.'/'.$f->idflia)?>">
 															<?php echo $f->nombre_familia; ?>
 														</a>
 													</p>

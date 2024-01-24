@@ -194,6 +194,64 @@ class Formulario_model extends CI_Model
 		return $qry->result();
 	}
 
+	public function getItemPorSubfamilia($idsubflia){
+		$sql = "SELECT *      "
+			."FROM item_sub "
+			."LEFT JOIN item ON item.iditem = item_sub.rel_iditem  "
+			."LEFT JOIN subfamilia ON subfamilia.idsubflia = item_sub.rel_idsubflia   "
+			."WHERE subfamilia.idsubflia = ?  "
+			."ORDER BY item.ordinal_item ASC   "
+			."   "
+			."   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql, [$idsubflia,]);
+		return $qry->result();
+	}
+
+	public function getItemPorFamilia($idfamilia){
+		$sql = "SELECT *      "
+			."FROM item_fam "
+			."LEFT JOIN item ON item.iditem = item_fam.rel_iditem  "
+			."LEFT JOIN familia ON familia.idflia = item_fam.rel_idfamilia   "
+			."WHERE familia.idflia = ?  "
+			."ORDER BY item.ordinal_item ASC   "
+			."   "
+			."   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql, [$idfamilia,]);
+		return $qry->result();
+	}
+
+	public function getFamiliaId($idfamilia)
+	{
+		$sql = "SELECT *      "
+			."FROM familia   "
+			."WHERE familia.idflia = ?   "
+			."   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql, [$idfamilia,  ]);
+		return $qry->row();
+	}
+	public function getSubfamiliaId($idfamilia)
+	{
+		$sql = "SELECT *      "
+			."FROM subfamilia   "
+			."WHERE subfamilia.idsubflia = ?  "
+			."   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql, [$idfamilia,  ]);
+		return $qry->row();
+	}
+
+
+
+
+
+
 
 
 

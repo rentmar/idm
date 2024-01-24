@@ -99,30 +99,34 @@ class Formulario extends CI_Controller{
 		$formresp = $this->Formulario_model->getFormularioPorID($idformulario);
 		$subfamilia = $this->Formulario_model->getFamiliaSubfamilia();
 		//var_dump($subfamilia);
+		//var_dump($complemento);
 		$datos['formulario_resp'] = $formresp;
 		$datos['familias'] = $this->Formulario_model->getFamilias();
 		$datos['subfamilias'] = $subfamilia;
-		if(empty($complemento)){
-			//NO existe respuestas, primer ingreso al formulario complementario
-			//El array esta vacio
-			$this->load->view('formularios/vform_complemento', $datos);
-		}else{
-			//Existen respuestas, el formulario complementario ha sido modificado
-			//El array no esta vacio
-			$this->load->view('formularios/vform_complemento', $datos);
-		}
+		$this->load->view('formularios/vform_complemento', $datos);
 	}
 
-	public function subfamilia($idsubfamilia)
+	public function subfamilia($idform, $idsubfamilia)
 	{
 		$idsubflia = $idsubfamilia;
-		echo "subfamilias: ".$idsubflia;
-
+		$idformulario = $idform;
+		//$datos[];
+		$formresp = $this->Formulario_model->getFormularioPorID($idformulario);
+		$datos['formulario_resp'] = $formresp;
+		$datos['items'] = $this->Formulario_model->getItemPorSubfamilia($idsubflia);
+		$datos['familia'] = $this->Formulario_model->getFamiliaId($idsubflia);
+		$this->load->view('formularios/vform_subf_item', $datos);
 	}
 
-	public function familias($idfamilia){
+	public function familia($idform, $idfamilia){
 		$idflia = $idfamilia;
-		echo "familia: ".$idflia;
+		$idformulario = $idform;
+		$formresp = $this->Formulario_model->getFormularioPorID($idformulario);
+		$datos['formulario_resp'] = $formresp;
+		$datos['items'] = $this->Formulario_model->getItemPorFamilia($idflia);
+		$datos['familia'] = $this->Formulario_model->getFamiliaId($idflia);
+		$this->load->view('formularios/vform_fam_item', $datos);
+
 	}
 
 }
