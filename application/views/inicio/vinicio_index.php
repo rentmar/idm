@@ -15,7 +15,7 @@
 <!-- Interfaz Encuesta -->
 <?php if($this->ion_auth->in_group(3)): ?>
 	<br>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<?php if(!empty($this->session->flashdata())): ?>
 				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" >
@@ -45,6 +45,9 @@
 					<thead class="thead-dark">
 					<tr id="datos">
 						<th>Id</th>
+						<th>Cudad</th>
+						<th>Zona</th>
+						<th>Lugar</th>
 						<th>Nombre Lugar</th>
 						<th>Fecha</th>
 						<th>Estado</th>
@@ -55,7 +58,10 @@
 					<?php foreach ($form_abiertos as $e) {?>
 						<tr>
 							<td><?php echo $e->idformresp;?></td>
+							<td><?php echo $e->nombre_ciudad; ?></td>
+							<td><?php echo $e->nombre_zona; ?></td>
 							<td><?php echo $e->nombre_lugar; ?></td>
+							<td><?php echo $e->nombre_del_lugar; ?></td>
 							<td><?php echo $e->fecha_fc;?></td>
 
 							<?php if($e->esta_abierto): ?>

@@ -59,9 +59,9 @@
 								<input type="date" class="form-control" id="fecha_registro" name="fecha_registro"  required>
 							</div>
 							<div>
-								<input type="text" name="idusuario" id="idusuario" value="<?php echo $usuario->id;?>">
-								<input type="text" name="latitud_f" id="latitud_f">
-								<input type="text" name="longitud_f" id="longitud_f" >
+								<input type="hidden" name="idusuario" id="idusuario" value="<?php echo $usuario->id;?>">
+								<input type="hidden" name="latitud_f" id="latitud_f">
+								<input type="hidden" name="longitud_f" id="longitud_f" >
 							</div>
 
 							<br><br>

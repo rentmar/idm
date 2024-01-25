@@ -89,8 +89,12 @@ class Formulario_model extends CI_Model
 	}
 
 	public function getFormRespPorIdusuario($idusuario){
-		$sql = "SELECT *      "
+		$sql = "SELECT formulario_respuesta.idformresp, formulario_respuesta.nombre_lugar AS nombre_del_lugar, formulario_respuesta.esta_abierto, formulario_respuesta.es_valido, ciudad.idciudad, ciudad.nombre_ciudad, zona.idzona, zona.nombre_zona, lugar.idlugar, lugar.nombre_lugar, formulario_respuesta.rel_idusuario, formulario_respuesta.rel_iduiformulario, formulario_respuesta.fecha_fc            "
 			."FROM  formulario_respuesta "
+			."LEFT JOIN ciudad ON ciudad.idciudad = formulario_respuesta.rel_idciudad   "
+			."LEFT JOIN zona ON zona.idzona = formulario_respuesta.rel_idzona   "
+			."LEFT JOIN lugar ON lugar.idlugar = formulario_respuesta.rel_idlugar   "
+			."   "
 			."WHERE formulario_respuesta.rel_idusuario = ?   "
 			."   "
 			."  "
@@ -162,7 +166,7 @@ class Formulario_model extends CI_Model
 			."   "
 			."   ";
 		$qry = $this->db->query($sql, [$idformulario, ]);
-		return $qry->result();
+		return $qry->row();
 	}
 
 
@@ -251,6 +255,21 @@ class Formulario_model extends CI_Model
 			."   ";
 		$qry = $this->db->query($sql, [$idfamilia,  ]);
 		return $qry->row();
+	}
+
+	//Leer todos los items registrados
+	public function getItems()
+	{
+		$sql = "SELECT *      "
+			."FROM item "
+			."  "
+			."ORDER BY item.ordinal_item ASC   "
+			."   "
+			."   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql);
+		return $qry->result();
 	}
 
 
