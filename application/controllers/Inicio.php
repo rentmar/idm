@@ -27,6 +27,14 @@ class Inicio extends CI_Controller
 
 		$form_abiertos = $this->Formulario_model->getFormRespPorIdusuario($idusuario);
 
+
+		$datos['no_es_vista_previa'] = 1;
+		$datos['ciudad'] = $this->Formulario_model->getCiudad();
+		$datos['zona'] = $this->Formulario_model->getZona();
+		$datos['lugar'] = $this->Formulario_model->getLugar();
+		$datos['formularios_base'] = $this->Formulario_model->getFormularios();
+
+
 		$datos['usuario'] = $usuario;
 		$datos['idusuario'] = $idusuario;
 		$datos['form_abiertos'] = $form_abiertos;

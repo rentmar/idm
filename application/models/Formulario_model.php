@@ -272,6 +272,41 @@ class Formulario_model extends CI_Model
 		return $qry->result();
 	}
 
+	//Cuenta el numero de subfamilias de una familia
+	public function numeroSubflias($idfamilia){
+		$this->db->where('subfamilia.rel_idflia', $idfamilia);
+		$this->db->from('subfamilia');
+		return $this->db->count_all_results();
+	}
+
+	//Leer todos las datos de una subfamilia que pertenece a una familia
+	public function getSubflias_de_una_flia($idfamilia){
+		$sql = "SELECT *      "
+			."FROM subfamilia "
+			."WHERE subfamilia.rel_idflia=?  "
+			."   "
+			."   "
+			."   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql, [$idfamilia, ]);
+		return $qry->result();
+	}
+
+	//Obtener todas las imagenes de una subfamilia
+	public function getImagenesSubfamilia($idsubfamilia){
+		$sql = "SELECT *      "
+			."FROM imagen_subflia "
+			."WHERE imagen_subflia.rel_idsubflia = ?  "
+			."  "
+			."   "
+			."   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql, [$idsubfamilia, ]);
+		return $qry->result();
+	}
+
 
 
 

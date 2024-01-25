@@ -99,25 +99,12 @@ class Formulario extends CI_Controller{
 		$formresp = $this->Formulario_model->getFormularioPorID($idformulario);
 		$subfamilia = $this->Formulario_model->getFamiliaSubfamilia();
 
-		$respuesta = $complemento;
-
-		var_dump($respuesta);
-
-		$respuesta_obj = json_decode($respuesta->form_resp);
-
-		echo '<br><br>';
 
 
-		var_dump($respuesta_obj);
-
-
-
-
-
-		/*$datos['formulario_resp'] = $formresp;
+		$datos['formulario_resp'] = $formresp;
 		$datos['familias'] = $this->Formulario_model->getFamilias();
 		$datos['subfamilias'] = $subfamilia;
-		$this->load->view('formularios/vform_complemento', $datos);*/
+		$this->load->view('formularios/vform_complemento', $datos);
 	}
 
 	private function respuestas(){
@@ -151,5 +138,32 @@ class Formulario extends CI_Controller{
 		$this->load->view('formularios/vform_fam_item', $datos);
 
 	}
+
+	//Vista para el despliegue de las subfamilias o items
+	public function items($idform, $idfamilia){
+		$idflia = $idfamilia;
+		$idformulario = $idform;
+		$idformulario = $idform;
+		$complemento = $this->Formulario_model->buscarComplementoFormulario($idformulario);
+		$formresp = $this->Formulario_model->getFormularioPorID($idformulario);
+
+		$numeroSubfamilias = $this->Formulario_model->numeroSubflias($idflia);
+
+		$datos['formulario_resp'] = $formresp;
+		$datos['familia'] = $this->Formulario_model->getFamiliaId($idflia);
+
+		if($numeroSubfamilias==0){
+			//NO existen subfamilias
+			$this->load->view('formularios/vform_flia_item', $datos);
+		}else{
+			//Existen subfamilias
+			$subfamilias = $this->Formulario_model->getSubflias_de_una_flia($idflia);
+			$datos['subfamilias'] = $subfamilias;
+			$this->load->view('formularios/vform_subfam_item', $datos);
+		}
+
+	}
+
+
 
 }

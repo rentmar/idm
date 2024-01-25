@@ -18,6 +18,11 @@
 				Inicio
 			</a>
 		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="<?php echo site_url('formulario/formulariocmp/'.$formulario_resp->idformresp);?>">
+				Menu principal
+			</a>
+		</li>
 	</ul>
 </nav>
 
@@ -64,40 +69,125 @@
 					<input type="text" name="idformulario_resp" id="idformulario_resp" value="<?php echo $formulario_resp->idformresp; ?>" >
 				</div>
 			</div>
-			<br>
 			<div>
-				<div class="list-group">
-					<?php foreach ($familias as $f): ?>
-					<a href="<?php echo site_url('formulario/items/'.$formulario_resp->idformresp.'/'.$f->idflia)?>" class="list-group-item list-group-item-action">
-						<?php echo $f->nombre_familia; ?>
-					</a>
-					<?php endforeach; ?>
+				<hr>
+			</div>
+			<div>
+				<h2><?php echo $familia->nombre_familia;?></h2>
+			</div>
+			<div>
+				<hr>
+			</div>
+			<?php foreach ($subfamilias as $s): ?>
+			<div class="card">
+				<div class="card-header">
+					<div class="d-flex ">
+						<div class="p-2  "><h3><?php echo $s->nombre_subfamilia;?></h3></div>
+
+						<?php $imagenes = $this->Formulario_model->getImagenesSubfamilia($s->idsubflia); ?>
+						<?php foreach ($imagenes as $img): ?>
+							<div class="p-2 ">
+								<img src="<?php echo base_url($img->img_url); ?>" class="img-thumbnail" width="100" height="92" >
+							</div>
+						<?php endforeach; ?>
+					</div>
+				</div>
+				<div class="card-body">
+					<div>
+						<div class="card-deck">
+							<?php $items = $this->Formulario_model->getItemPorSubfamilia($s->idsubflia); ?>
+
+							<?php foreach ($items as $it):  ?>
+							<div class="col-md-3">
+								<div class="card">
+									<div class="card-body">
+										<h4 class="card-title">
+											<?php echo $it->nombre_item;?>
+										</h4>
+										<p class="card-text">
+
+										</p>
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $it->iditem; ?>">
+											Registrar
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<!-- MODAL --->
+								<div class="modal fade" id="modal<?php echo $it->iditem; ?>">
+									<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+
+											<!-- Modal Header -->
+											<div class="modal-header">
+												<h4 class="modal-title">
+													<?php echo $it->nombre_item;?>
+
+												</h4>
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+											</div>
+
+											<!-- Modal body -->
+											<div class="modal-body">
+												<form action="/action_page.php">
+													<div class="form-group">
+														<label for="email">
+															ABC
+														</label>
+														<input type="number" value="0" step="0.01" min="0.0" class="form-control" id="" name="">
+													</div>
+													<div class="form-group">
+														<label for="email">
+															Acricolor
+														</label>
+														<input type="number" value="0" min="0.0" class="form-control" id="" name="">
+													</div>
+													<div class="form-group">
+														<label for="email">
+															Alamo
+														</label>
+														<input type="number" value="0" min="0.0" class="form-control" id="" name="">
+													</div>
+											</div>
+
+											<!-- Modal footer -->
+											<div class="modal-footer">
+												<button type="submit" class="btn btn-primary">Submit</button>
+												</form>
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+
+								<!-- FIN MODAL --->
+
+
+							<?php endforeach; ?>
+
+
+
+						</div>
+					</div>
+
+
 				</div>
 			</div>
+			<br>
+			<?php endforeach; ?>
+
+
+
+
+
+
+		</div>
 
 		</div>
 	</div>
-</div>
-
-<div>
-	<hr>
-</div>
-
-<div id="navegacion" class="container">
-	<ul class="nav justify-content-center">
-		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Link</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link disabled" href="#">Disabled</a>
-		</li>
-	</ul>
 </div>
 
 
@@ -162,6 +252,7 @@
 	</div>
 </div>
 
+<br><br><br><br><br><br><br><br><br><br>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
