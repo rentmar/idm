@@ -61,7 +61,7 @@
 							<?php echo $formulario_resp->nombre  ?>
 						</li>
 					</ul>
-					<input type="text" name="idformulario_resp" id="idformulario_resp" value="<?php echo $formulario_resp->idformresp; ?>" >
+					<input type="hidden" name="idformulario_resp" id="idformulario_resp" value="<?php echo $formulario_resp->idformresp; ?>" >
 				</div>
 			</div>
 			<br>

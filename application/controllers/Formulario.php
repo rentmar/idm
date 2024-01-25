@@ -154,6 +154,9 @@ class Formulario extends CI_Controller{
 
 		if($numeroSubfamilias==0){
 			//NO existen subfamilias
+			//Buscar todos los items de una familia
+			$items = $this->Formulario_model->getItemPorFamilia($idflia);
+			$datos['items'] =$items;
 			$this->load->view('formularios/vform_flia_item', $datos);
 		}else{
 			//Existen subfamilias
