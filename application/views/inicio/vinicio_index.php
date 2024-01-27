@@ -33,7 +33,7 @@
 			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 color-contenedores">
 				<div id="caja_boton">
 					<div id="contenedor-submit">
-						<button type="button" class="BOTON" data-toggle="modal" data-target="#myModal">
+						<button id="crearformulario" type="button" class="BOTON" >
 							Agregar
 						</button>
 					</div>
@@ -159,9 +159,9 @@
 					<input type="date" class="form-control" id="fecha_registro" name="fecha_registro"  required>
 				</div>
 				<div>
-					<input type="text" name="idusuario" id="idusuario" value="<?php echo $usuario->id;?>">
-					<input type="text" name="latitud_f" id="latitud_f">
-					<input type="text" name="longitud_f" id="longitud_f" >
+					<input type="hidden" name="idusuario" id="idusuario" value="<?php echo $usuario->id;?>">
+					<input type="hidden" name="latitud_f" id="latitud_f">
+					<input type="hidden" name="longitud_f" id="longitud_f" >
 				</div>
 
 				<br><br>
