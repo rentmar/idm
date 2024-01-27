@@ -247,7 +247,7 @@ class Formulario extends CI_Controller{
 
 		$precios_json = $marcaPrecios['marca'];
 		$precios = json_decode($precios_json);
-		var_dump($precios);
+		//var_dump($precios);
 		foreach ($precios as $p):
 			$lblb = 'precio-bajo-'.$p->idmarca;  //precio-bajo-<?php echo $m->marca;
 			$lbla = 'precio-alto-'.$p->idmarca;	 //precio-alto-<?php echo $m->marca;
