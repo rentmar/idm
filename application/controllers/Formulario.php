@@ -143,7 +143,6 @@ class Formulario extends CI_Controller{
 	public function items($idform, $idfamilia){
 		$idflia = $idfamilia;
 		$idformulario = $idform;
-		$idformulario = $idform;
 		$complemento = $this->Formulario_model->buscarComplementoFormulario($idformulario);
 		$formresp = $this->Formulario_model->getFormularioPorID($idformulario);
 
@@ -151,6 +150,8 @@ class Formulario extends CI_Controller{
 
 		$datos['formulario_resp'] = $formresp;
 		$datos['familia'] = $this->Formulario_model->getFamiliaId($idflia);
+
+
 
 		if($numeroSubfamilias==0){
 			//NO existen subfamilias
@@ -164,8 +165,11 @@ class Formulario extends CI_Controller{
 			$datos['subfamilias'] = $subfamilias;
 			$this->load->view('formularios/vform_subfam_item', $datos);
 		}
-
 	}
+
+
+	//Captura de los datos
+	
 
 
 

@@ -105,7 +105,7 @@
 											<?php echo $it->nombre_item;?>
 										</h4>
 										<p class="card-text">
-
+											Codigo: <?php echo $it->codigo_item; ?>.
 										</p>
 										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $it->iditem; ?>">
 											Registrar
@@ -130,31 +130,40 @@
 
 											<!-- Modal body -->
 											<div class="modal-body">
-												<form action="/action_page.php">
+												<?php $codigo_item = ' '.$it->codigo_item.' ';  ?>
+												<?php //$codigo_item = 'A1'; ?>
+												<?php $marcaPrecios = $this->Formulario_model->getMarcasPrecios($formulario_resp->idformresp, $codigo_item); ?>
+												<?php
+
+														//var_dump($marcaPrecios);
+														$marcas_json = $marcaPrecios['marca'];
+														//var_dump($marcas_json);
+														$marcas = json_decode($marcas_json);
+														//var_dump($marcas);
+												?>
+												<?php echo form_open('formulario/procesar/'); ?>
+
+													<?php if(!empty($marcas)):?>
+													<?php foreach ($marcas as $m): ?>
 													<div class="form-group">
-														<label for="email">
-															ABC
+														<label for="precio-<?php echo $m->marca; ?>">
+															<?php echo $m->marca; ?>
 														</label>
-														<input type="number" value="0" step="0.01" min="0.0" class="form-control" id="" name="">
+														<input type="number"  class="form-control" id="precio-<?php echo $m->marca; ?>" name="precio-<?php echo $m->marca; ?>">
 													</div>
+													<?php endforeach; ?>
+													<?php endif; ?>
 													<div class="form-group">
-														<label for="email">
-															Acricolor
-														</label>
-														<input type="number" value="0" min="0.0" class="form-control" id="" name="">
-													</div>
-													<div class="form-group">
-														<label for="email">
-															Alamo
-														</label>
-														<input type="number" value="0" min="0.0" class="form-control" id="" name="">
+														<input type="text" class="form-control" id="idformresp" name="idformresp" value="<?php echo $formulario_resp->idformresp; ?>" >
+														<input type="text" class="form-control" id="codigo" name="codigo" value="<?php echo $it->codigo_item; ?>" >
+
 													</div>
 											</div>
 
 											<!-- Modal footer -->
 											<div class="modal-footer">
-												<button type="submit" class="btn btn-primary">Submit</button>
-												</form>
+												<button type="submit" class="btn btn-primary">Registrar</button>
+												<?php echo form_close(); ?>
 												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 											</div>
 
