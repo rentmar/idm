@@ -11,7 +11,7 @@
 <nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-bottom">
 	<ul class="navbar-nav">
 		<li class="nav-item">
-			<a class="nav-link" href="#">Cerrar Formulario</a>
+			<a class="nav-link" href="<?php echo site_url('formulario/cerrar/'.$formulario_resp->idformresp);?>">Cerrar Formulario</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="<?php echo site_url('inicio/');?>">
@@ -83,15 +83,27 @@
 	</div>
 </div>
 <div class="container">
-	<form action="/action_page.php">
-		<input type="checkbox" name="check_list[]" value="C/C++"><label>C++</label><br/>
-		<input type="checkbox" name="check_list[]" value="Java"><label>Java</label><br/>
-		<input type="checkbox" name="check_list[]" value="PHP"><label>PHP</label><br/>
-		<input type="checkbox" name="check_list[]" value="jQuery"><label>jQuery</label><br/>
-		<input type="submit" name="submit" value="Enviar"/>
+	<?php echo form_open('formulario/procesarvendidos/'); ?>
+		<?php foreach ($lmv as $o): ?>
+		<?php if($o->valor == 'si'): ?>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" checked value="<?php echo $o->idpmv; ?>" class="form-check-input" id="ckek_list" name="check_list[]">
+						<?php echo $o->productos ;?>
+					</label>
+				</div>
+		<?php else:?>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" value="<?php echo $o->idpmv; ?>" class="form-check-input" id="ckek_list" name="check_list[]">
+						<?php echo $o->productos ;?>
+					</label>
+				</div>
+		<?php endif;?>
+		<?php endforeach; ?>
+		<input type="hidden" id="idformresp" name="idformresp" value="<?php echo $formulario_resp->idformresp; ?>">
 		<button type="submit" class="btn btn-primary">Submit</button>
-	</form>
-
+	<?php echo form_close(); ?>
 </div>
 
 

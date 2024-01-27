@@ -284,20 +284,75 @@ class Formulario extends CI_Controller{
 	{
 		//Identificador del formulario respuesta
 		$idformresp = $idformresp;
-
-		//$complemento = $this->Formulario_model->buscarComplementoFormulario($idformulario);
 		$formresp = $this->Formulario_model->getFormularioPorID($idformresp);
+		//var_dump($formresp);
+		//echo '<br><br><br>';
 
-		//$numeroSubfamilias = $this->Formulario_model->numeroSubflias($idflia);
+		//Extraer el dato de los mas vendidos
+		$mv = $this->Formulario_model->getLosMasVendidos($idformresp);
+
+		$lmv_json = $mv['mv'];
+		$lmv = json_decode($lmv_json);
+
+		//var_dump($lmv);
 
 		$datos['formulario_resp'] = $formresp;
-		//$datos['familia'] = $this->Formulario_model->getFamiliaId($idflia);
-
-		//$datos['idflia_url'] = $idflia;
-		//$datos['idformulario_url'] = $idformulario;
+		$datos['lmv'] = $lmv;
 
 
 		$this->load->view('formularios/vform_itemsvendidos', $datos);
+	}
+
+	public function procesarvendidos(){
+		$idformresp = $this->input->post('idformresp');
+		$opciones = $this->input->post('check_list');
+
+		/*var_dump($opciones);
+		echo "<br><br>";
+		echo $idformresp;
+
+		echo "<br><br><br>";*/
+		$mv = $this->Formulario_model->getLosMasVendidos($idformresp);
+
+		$lmv_json = $mv['mv'];
+		$lmv = json_decode($lmv_json);
+
+		/*foreach ($lmv as $l):
+			echo $l->idpmv.'<br>';
+		endforeach;
+		echo "<br><br>";*/
+
+		foreach ($opciones as $o){
+			//echo $o;
+			foreach ($lmv as $l){
+				if($o == $l->idpmv){
+					//echo $l->productos;
+					$l->valor = 'si';
+				}
+			}
+		}
+
+		/*echo "<br><br><br>";
+		var_dump($lmv);*/
+
+		$datos_json = json_encode($lmv);
+
+		$this->Formulario_model->actualizarVendidos($idformresp, $datos_json);
+
+		redirect('formulario/vendidos/'.$idformresp);
+
+
+
+
+
+
+
+	}
+
+	public function cerrar($idformresp){
+		$idformresp = $idformresp;
+		$this->Formulario_model->cerrarForm($idformresp);
+		redirect('inicio');
 	}
 
 

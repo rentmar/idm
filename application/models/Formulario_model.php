@@ -125,7 +125,7 @@ class Formulario_model extends CI_Model
 			'fecha_fc' => $formulario->fecha_fc,
 			'latitud_fc' => $formulario->latitud_fc,
 			'longitud_fc' => $formulario->longitud_fc,
-			'masvendidos ' =>'[{"idpmv":"1","productos ":"Agendas","valor":"no"},{"idpmv":"2","productos ":"Archivadores","valor":"no"},{"idpmv":"3","productos ":"Bolígrafo de borrar","valor":"no"},{"idpmv":"4","productos ":"Bolìgrafos, lápiceros","valor":"no"},{"idpmv":"5","productos ":"Borradores, gomas","valor":"no"},{"idpmv":"6","productos ":"Calculadoras","valor":"no"},{"idpmv":"7","productos ":"Carpetas","valor":"no"},{"idpmv":"8","productos ":"Carpicola","valor":"no"},{"idpmv":"9","productos ":"Cartapacios","valor":"no"},{"idpmv":"10","productos ":"Cartulinas","valor":"no"},{"idpmv":"11","productos ":"Colores","valor":"no"},{"idpmv":"12","productos ":"Compas","valor":"no"},{"idpmv":"13","productos ":"Corrector de cinta","valor":"no"},{"idpmv":"14","productos ":"Cuadernillos","valor":"no"},{"idpmv":"15","productos ":"Cuadernos","valor":"no"},{"idpmv":"16","productos ":"Cuadernos anillados","valor":"no"},{"idpmv":"17","productos ":"Empastados","valor":"no"},{"idpmv":"18","productos ":"Estuche geométrico","valor":"no"},{"idpmv":"19","productos ":"Estuches","valor":"no"},{"idpmv":"20","productos ":"Folders","valor":"no"},{"idpmv":"21","productos ":"Goma Eva","valor":"no"},{"idpmv":"22","productos ":"Hojas bond","valor":"no"},{"idpmv":"23","productos ":"Hojas de carpeta","valor":"no"},{"idpmv":"24","productos ":"Hojas de colores","valor":"no"},{"idpmv":"25","productos ":"Lápices","valor":"no"},{"idpmv":"26","productos ":"Marcadores","valor":"no"},{"idpmv":"27","productos ":"Micropunta","valor":"no"},{"idpmv":"28","productos ":"Mochilas","valor":"no"},{"idpmv":"29","productos ":"Papel araña","valor":"no"},{"idpmv":"30","productos ":"Pegamento","valor":"no"},{"idpmv":"31","productos ":"Pintura al dedo","valor":"no"},{"idpmv":"32","productos ":"Plastilina","valor":"no"},{"idpmv":"33","productos ":"Resaltadores","valor":"no"},{"idpmv":"34","productos ":"Scotch","valor":"no"},{"idpmv":"35","productos ":"Tajadores","valor":"no"},{"idpmv":"36","productos ":"Tapas de carpeta","valor":"no"},{"idpmv":"37","productos ":"Temperas","valor":"no"},{"idpmv":"38","productos ":"Tijeras","valor":"no"},{"idpmv":"45","productos ":"No especifican","valor":"no"}]',
+			'masvendidos ' =>'[{"idpmv":"1","productos":"Agendas","valor":"no"},{"idpmv":"2","productos":"Archivadores","valor":"no"},{"idpmv":"3","productos":"Bolígrafo de borrar","valor":"no"},{"idpmv":"4","productos":"Bolìgrafos, lápiceros","valor":"no"},{"idpmv":"5","productos":"Borradores, gomas","valor":"no"},{"idpmv":"6","productos":"Calculadoras","valor":"no"},{"idpmv":"7","productos":"Carpetas","valor":"no"},{"idpmv":"8","productos":"Carpicola","valor":"no"},{"idpmv":"9","productos":"Cartapacios","valor":"no"},{"idpmv":"10","productos":"Cartulinas","valor":"no"},{"idpmv":"11","productos":"Colores","valor":"no"},{"idpmv":"12","productos":"Compas","valor":"no"},{"idpmv":"13","productos":"Corrector de cinta","valor":"no"},{"idpmv":"14","productos":"Cuadernillos","valor":"no"},{"idpmv":"15","productos":"Cuadernos","valor":"no"},{"idpmv":"16","productos":"Cuadernos anillados","valor":"no"},{"idpmv":"17","productos":"Empastados","valor":"no"},{"idpmv":"18","productos":"Estuche geométrico","valor":"no"},{"idpmv":"19","productos":"Estuches","valor":"no"},{"idpmv":"20","productos":"Folders","valor":"no"},{"idpmv":"21","productos":"Goma Eva","valor":"no"},{"idpmv":"22","productos":"Hojas bond","valor":"no"},{"idpmv":"23","productos":"Hojas de carpeta","valor":"no"},{"idpmv":"24","productos":"Hojas de colores","valor":"no"},{"idpmv":"25","productos":"Lápices","valor":"no"},{"idpmv":"26","productos":"Marcadores","valor":"no"},{"idpmv":"27","productos":"Micropunta","valor":"no"},{"idpmv":"28","productos":"Mochilas","valor":"no"},{"idpmv":"29","productos":"Papel araña","valor":"no"},{"idpmv":"30","productos":"Pegamento","valor":"no"},{"idpmv":"31","productos":"Pintura al dedo","valor":"no"},{"idpmv":"32","productos":"Plastilina","valor":"no"},{"idpmv":"33","productos":"Resaltadores","valor":"no"},{"idpmv":"34","productos":"Scotch","valor":"no"},{"idpmv":"35","productos":"Tajadores","valor":"no"},{"idpmv":"36","productos":"Tapas de carpeta","valor":"no"},{"idpmv":"37","productos":"Temperas","valor":"no"},{"idpmv":"38","productos":"Tijeras","valor":"no"},{"idpmv":"45","productos":"No especifican","valor":"no"}]',
 			'rel_idciudad' => $formulario->rel_idciudad,
 			'rel_idzona' => $formulario->rel_idzona,
 			'rel_idlugar' => $formulario->rel_idlugar,
@@ -443,6 +443,65 @@ class Formulario_model extends CI_Model
 		);
 		$this->db->where('idfrcmp', $idformcmp);
 		$this->db->update('formulario_respuesta_cmp', $data);
+
+		if ($this->db->trans_status() === FALSE)
+		{
+			$this->db->trans_rollback();
+			return false;
+		}
+		else
+		{
+			$this->db->trans_commit();
+			return true;
+		}
+	}
+
+	//Leer el dato de los mas vendidos
+	public function getLosMasVendidos($idformresp)
+	{
+		$sql = "SELECT formulario_respuesta.masvendidos AS mv  "
+			."FROM formulario_respuesta  "
+			."WHERE formulario_respuesta.idformresp = ?  "
+			."  "
+			."   "
+			."   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql, [$idformresp, ]);
+		return $qry->row_array();
+	}
+
+	public function actualizarVendidos($idformresp, $vendidos)
+	{
+		$this->db->trans_begin();
+
+		$data = array(
+			'masvendidos' => $vendidos,
+		);
+		$this->db->where('idformresp', $idformresp);
+		$this->db->update('formulario_respuesta ', $data);
+
+		if ($this->db->trans_status() === FALSE)
+		{
+			$this->db->trans_rollback();
+			return false;
+		}
+		else
+		{
+			$this->db->trans_commit();
+			return true;
+		}
+	}
+
+
+	public function cerrarForm($idformresp){
+		$this->db->trans_begin();
+
+		$data = array(
+			'esta_abierto' => false,
+		);
+		$this->db->where('idformresp', $idformresp);
+		$this->db->update('formulario_respuesta ', $data);
 
 		if ($this->db->trans_status() === FALSE)
 		{

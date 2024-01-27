@@ -11,7 +11,7 @@
 <nav class="navbar navbar-expand-sm bg-light justify-content-center fixed-bottom">
 	<ul class="navbar-nav">
 		<li class="nav-item">
-			<a class="nav-link" href="#">Cerrar Formulario</a>
+			<a class="nav-link" href="<?php echo site_url('formulario/cerrar/'.$formulario_resp->idformresp);?>">Cerrar Formulario</a>
 		</li>
 		<li class="nav-item">
 			<a class="nav-link" href="<?php echo site_url('inicio/');?>">

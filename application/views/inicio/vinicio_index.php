@@ -74,9 +74,11 @@
 								</td>
 							<?php endif; ?>
 							<td>
+								<?php if($e->esta_abierto): ?>
 								<a href="<?php echo site_url('formulario/formulariocmp/').$e->idformresp; ?>" class="btn" role="button">
 									<i class="fas fa-edit"></i>
 								</a>
+								<?php endif; ?>
 							</td>
 						</tr>
 					<?php } ?>
