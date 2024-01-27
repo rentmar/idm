@@ -141,22 +141,21 @@
 														$marcas = json_decode($marcas_json);
 														//var_dump($marcas);
 												?>
-												<?php echo form_open('formulario/procesar/'); ?>
+												<?php echo form_open('formulario/procesaritem/'); ?>
 
 													<?php if(!empty($marcas)):?>
 													<?php foreach ($marcas as $m): ?>
 													<div class="form-group">
-														<label for="precio-<?php echo $m->marca; ?>">
+														<label for="precio-<?php echo $m->idmarca; ?>">
 															<?php echo $m->marca; ?>
 														</label>
-														<input type="number"  class="form-control" id="precio-<?php echo $m->marca; ?>" name="precio-<?php echo $m->marca; ?>">
+														<input type="number" step="0.01" class="form-control" value="<?php echo $m->precio; ?>" id="precio-<?php echo $m->idmarca; ?>" name="precio-<?php echo $m->idmarca; ?>">
 													</div>
 													<?php endforeach; ?>
 													<?php endif; ?>
 													<div class="form-group">
 														<input type="text" class="form-control" id="idformresp" name="idformresp" value="<?php echo $formulario_resp->idformresp; ?>" >
 														<input type="text" class="form-control" id="codigo" name="codigo" value="<?php echo $it->codigo_item; ?>" >
-
 													</div>
 											</div>
 

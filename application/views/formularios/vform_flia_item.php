@@ -127,14 +127,14 @@
 							//var_dump($marcas);
 							?>
 
-							<?php echo form_open();?>
+							<?php echo form_open('formulario/procesaritem/');?>
 							<?php if(!empty($marcas)):?>
 								<?php foreach ($marcas as $m): ?>
 									<div class="form-group">
 										<label for="precio-<?php echo $m->marca; ?>">
 											<?php echo $m->marca; ?>
 										</label>
-										<input type="number"  class="form-control" id="precio-<?php echo $m->marca; ?>" name="precio-<?php echo $m->marca; ?>">
+										<input type="number" step="0.01"   class="form-control" id="precio-<?php echo $m->marca; ?>" name="precio-<?php echo $m->marca; ?>">
 									</div>
 								<?php endforeach; ?>
 							<?php endif; ?>

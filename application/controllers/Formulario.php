@@ -169,7 +169,73 @@ class Formulario extends CI_Controller{
 
 
 	//Captura de los datos
-	
+	public function procesaritem(){
+		$idformresp = $this->input->post('idformresp');
+		$codigo = $this->input->post('codigo');
+
+		echo 'idformresp: '.$idformresp;
+		echo '<br>';
+		echo 'codigo: '.$codigo;
+		echo '<br><br><br>';
+
+		//Estructura de datos
+		$marcaPrecios = $this->Formulario_model->getMarcasPrecios($idformresp, $codigo);
+		var_dump($marcaPrecios);
+		echo '<br>';
+		echo '<br>';
+
+		$precios_json = $marcaPrecios['marca'];
+		var_dump($precios_json);
+		echo '<br>';
+		echo '<br>';
+
+		$precios = json_decode($precios_json);
+		var_dump($precios);
+		echo '<br>';
+		echo '<br>';
+
+		foreach ($precios as $p):
+			echo $p->idmarca.' '.$p->marca.' '.$p->precio;
+			echo '<br>';
+		endforeach;
+
+
+		foreach ($precios as $p):
+			$lbl = 'precio-'.$p->idmarca;
+			$p->precio = $this->input->post($lbl);
+		endforeach;
+		var_dump($precios);
+		echo '<br>';
+		echo '<br>';
+
+		//COnvertir a json
+		$precios_mod_json = json_encode($precios);
+		var_dump($precios_mod_json);
+
+		echo '<br>';
+		echo '<br>';
+
+		//Extraer el formulario complemento
+		$form_cmp = $this->Formulario_model->getFormCmp($idformresp);
+		//var_dump($form_cmp);
+		echo $form_cmp->idfrcmp;
+
+		//Actualizar el registro usando el codigo como referencia
+		$this->Formulario_model->actualizarPrecios($form_cmp->idfrcmp, $codigo, $precios_mod_json);
+
+		//
+
+
+
+
+
+
+
+
+
+
+
+	}
 
 
 

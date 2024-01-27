@@ -386,6 +386,46 @@ class Formulario_model extends CI_Model
 		return $qry->row_array();
 	}
 
+	//Extraer el complemento a la respuesta
+	public function getFormCmp($idformrespuesta)
+	{
+		$sql = "SELECT  * "
+			."FROM formulario_respuesta_cmp "
+			."WHERE formulario_respuesta_cmp.rel_idformresp = ?  "
+			."  "
+			."   "
+			."   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql, [$idformrespuesta, ]);
+		return $qry->row();
+	}
+
+	//Actualizar la tabla
+	public function actualizarPrecios($idformcmp, $codigo, $precios)
+	{
+		$this->db->trans_begin();
+
+		$data = array(
+			$codigo => $precios,
+		);
+		$this->db->where('idfrcmp', $idformcmp);
+		$this->db->update('formulario_respuesta_cmp', $data);
+
+		if ($this->db->trans_status() === FALSE)
+		{
+			$this->db->trans_rollback();
+			return false;
+		}
+		else
+		{
+			$this->db->trans_commit();
+			return true;
+		}
+	}
+
+
+
 
 
 
