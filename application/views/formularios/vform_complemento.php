@@ -72,6 +72,9 @@
 						<?php echo $f->nombre_familia; ?>
 					</a>
 					<?php endforeach; ?>
+					<a href="<?php echo site_url('formulario/vendidos/'.$formulario_resp->idformresp)?>" class="list-group-item list-group-item-action">
+						LOS MAS VENDIDOS
+					</a>
 				</div>
 			</div>
 

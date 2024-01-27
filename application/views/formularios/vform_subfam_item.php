@@ -154,8 +154,10 @@
 													<?php endforeach; ?>
 													<?php endif; ?>
 													<div class="form-group">
-														<input type="text" class="form-control" id="idformresp" name="idformresp" value="<?php echo $formulario_resp->idformresp; ?>" >
-														<input type="text" class="form-control" id="codigo" name="codigo" value="<?php echo $it->codigo_item; ?>" >
+														<input type="hidden" class="form-control" id="idformresp" name="idformresp" value="<?php echo $formulario_resp->idformresp; ?>" >
+														<input type="hidden" class="form-control" id="codigo" name="codigo" value="<?php echo $it->codigo_item; ?>" >
+														<input type="hidden" class="form-control" id="idflia_url" name="idflia_url" value="<?php echo $idflia_url;?>">
+														<input type="hidden" class="form-control" id="idformulario_url" name="idformulario_url" value="<?php echo $idformulario_url; ?>">
 													</div>
 											</div>
 

@@ -127,20 +127,23 @@
 							//var_dump($marcas);
 							?>
 
-							<?php echo form_open('formulario/procesaritem/');?>
+							<?php echo form_open('formulario/procesaritemf/');?>
 							<?php if(!empty($marcas)):?>
 								<?php foreach ($marcas as $m): ?>
 									<div class="form-group">
 										<label for="precio-<?php echo $m->marca; ?>">
 											<?php echo $m->marca; ?>
 										</label>
-										<input type="number" step="0.01"   class="form-control" id="precio-<?php echo $m->marca; ?>" name="precio-<?php echo $m->marca; ?>">
+										<input type="number" step="0.01" placeholder="Costo mas bajo"   class="form-control" value="<?php echo $m->precio_bajo; ?>" id="precio-bajo-<?php echo $m->idmarca; ?>" name="precio-bajo-<?php echo $m->idmarca; ?>">
+										<input type="number" step="0.01" placeholder="Costo mas alto"  class="form-control" value="<?php echo $m->precio_alto; ?>" id="precio-alto-<?php echo $m->idmarca; ?>" name="precio-alto-<?php echo $m->idmarca; ?>">
 									</div>
 								<?php endforeach; ?>
 							<?php endif; ?>
 							<div class="form-group">
-								<input type="text" class="form-control" id="idformresp" name="idformresp" value="<?php echo $formulario_resp->idformresp; ?>" >
-								<input type="text" class="form-control" id="codigo" name="codigo" value="<?php echo $i->codigo_item; ?>" >
+								<input type="hidden" class="form-control" id="idformresp" name="idformresp" value="<?php echo $formulario_resp->idformresp; ?>" >
+								<input type="hidden" class="form-control" id="codigo" name="codigo" value="<?php echo $i->codigo_item; ?>" >
+								<input type="hidden" class="form-control" id="idflia_url" name="idflia_url" value="<?php echo $idflia_url;?>">
+								<input type="hidden" class="form-control" id="idformulario_url" name="idformulario_url" value="<?php echo $idformulario_url; ?>">
 
 							</div>
 						</div>

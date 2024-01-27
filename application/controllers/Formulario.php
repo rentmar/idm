@@ -151,6 +151,9 @@ class Formulario extends CI_Controller{
 		$datos['formulario_resp'] = $formresp;
 		$datos['familia'] = $this->Formulario_model->getFamiliaId($idflia);
 
+		$datos['idflia_url'] = $idflia;
+		$datos['idformulario_url'] = $idformulario;
+
 
 
 		if($numeroSubfamilias==0){
@@ -172,69 +175,129 @@ class Formulario extends CI_Controller{
 	public function procesaritem(){
 		$idformresp = $this->input->post('idformresp');
 		$codigo = $this->input->post('codigo');
+		$idflia_url = $this->input->post('idflia_url');
+		$idformulario_url =	$this->input->post('idformulario_url');
 
-		echo 'idformresp: '.$idformresp;
+
+
+		/*echo 'idformresp: '.$idformresp;
 		echo '<br>';
 		echo 'codigo: '.$codigo;
-		echo '<br><br><br>';
+		echo '<br><br><br>';*/
 
 		//Estructura de datos
 		$marcaPrecios = $this->Formulario_model->getMarcasPrecios($idformresp, $codigo);
-		var_dump($marcaPrecios);
+		/*var_dump($marcaPrecios);
 		echo '<br>';
-		echo '<br>';
+		echo '<br>';*/
 
 		$precios_json = $marcaPrecios['marca'];
-		var_dump($precios_json);
+		/*var_dump($precios_json);
 		echo '<br>';
-		echo '<br>';
+		echo '<br>';*/
 
 		$precios = json_decode($precios_json);
-		var_dump($precios);
+		/*var_dump($precios);
 		echo '<br>';
-		echo '<br>';
+		echo '<br>';*/
 
-		foreach ($precios as $p):
+		/*foreach ($precios as $p):
 			echo $p->idmarca.' '.$p->marca.' '.$p->precio;
 			echo '<br>';
-		endforeach;
+		endforeach;*/
 
 
 		foreach ($precios as $p):
 			$lbl = 'precio-'.$p->idmarca;
 			$p->precio = $this->input->post($lbl);
 		endforeach;
-		var_dump($precios);
-		echo '<br>';
-		echo '<br>';
+		//var_dump($precios);
+		//echo '<br>';
+		//echo '<br>';
 
 		//COnvertir a json
 		$precios_mod_json = json_encode($precios);
 		var_dump($precios_mod_json);
 
-		echo '<br>';
-		echo '<br>';
+		//echo '<br>';
+		//echo '<br>';
 
 		//Extraer el formulario complemento
 		$form_cmp = $this->Formulario_model->getFormCmp($idformresp);
 		//var_dump($form_cmp);
-		echo $form_cmp->idfrcmp;
+		//echo $form_cmp->idfrcmp;
 
 		//Actualizar el registro usando el codigo como referencia
 		$this->Formulario_model->actualizarPrecios($form_cmp->idfrcmp, $codigo, $precios_mod_json);
 
 		//
 
+		redirect('formulario/items/'.$idformulario_url.'/'.$idflia_url);
+	}
+
+	//Procesar item
+	public function procesaritemf(){
+		$idformresp = $this->input->post('idformresp');
+		$codigo = $this->input->post('codigo');
+		$idflia_url = $this->input->post('idflia_url');
+		$idformulario_url =	$this->input->post('idformulario_url');
+
+		//Estructura de datos
+		$marcaPrecios = $this->Formulario_model->getMarcasPrecios($idformresp, $codigo);
+
+		$precios_json = $marcaPrecios['marca'];
+		$precios = json_decode($precios_json);
+		var_dump($precios);
+		foreach ($precios as $p):
+			$lblb = 'precio-bajo-'.$p->idmarca;  //precio-bajo-<?php echo $m->marca;
+			$lbla = 'precio-alto-'.$p->idmarca;	 //precio-alto-<?php echo $m->marca;
+			$p->precio_bajo = $this->input->post($lblb);
+			$p->precio_alto = $this->input->post($lbla);
+
+		endforeach;
+
+		//COnvertir a json
+		$precios_mod_json = json_encode($precios);
+		//var_dump($precios_mod_json);
+
+		//echo '<br>';
+		//echo '<br>';
+
+		//Extraer el formulario complemento
+		$form_cmp = $this->Formulario_model->getFormCmp($idformresp);
+		//var_dump($form_cmp);
+		//echo $form_cmp->idfrcmp;
+
+		//Actualizar el registro usando el codigo como referencia
+		$this->Formulario_model->actualizarPrecios($form_cmp->idfrcmp, $codigo, $precios_mod_json);
+
+		//
+
+		redirect('formulario/items/'.$idformulario_url.'/'.$idflia_url);
 
 
 
+	}
+
+	//Procesar los productos mas vendidos
+	public function vendidos($idformresp)
+	{
+		//Identificador del formulario respuesta
+		$idformresp = $idformresp;
+
+		//$complemento = $this->Formulario_model->buscarComplementoFormulario($idformulario);
+		$formresp = $this->Formulario_model->getFormularioPorID($idformresp);
+
+		//$numeroSubfamilias = $this->Formulario_model->numeroSubflias($idflia);
+
+		$datos['formulario_resp'] = $formresp;
+		//$datos['familia'] = $this->Formulario_model->getFamiliaId($idflia);
+
+		//$datos['idflia_url'] = $idflia;
+		//$datos['idformulario_url'] = $idformulario;
 
 
-
-
-
-
-
+		$this->load->view('formularios/vform_itemsvendidos', $datos);
 	}
 
 
