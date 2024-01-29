@@ -67,13 +67,15 @@
 			<br>
 			<div>
 				<div class="list-group">
+					<?php $contador = 'A';?>
 					<?php foreach ($familias as $f): ?>
 					<a href="<?php echo site_url('formulario/items/'.$formulario_resp->idformresp.'/'.$f->idflia)?>" class="list-group-item list-group-item-action">
-						<?php echo $f->nombre_familia; ?>
+						<?php echo $contador.') '.$f->nombre_familia; ?>
 					</a>
+					<?php $contador++;?>
 					<?php endforeach; ?>
 					<a href="<?php echo site_url('formulario/vendidos/'.$formulario_resp->idformresp)?>" class="list-group-item list-group-item-action">
-						LOS MAS VENDIDOS
+						<?php echo $contador.') '; ?>LOS MAS VENDIDOS
 					</a>
 				</div>
 			</div>

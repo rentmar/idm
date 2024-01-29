@@ -145,13 +145,23 @@
 
 													<?php if(!empty($marcas)):?>
 													<?php foreach ($marcas as $m): ?>
-													<div class="form-group">
-														<label for="precio-<?php echo $m->idmarca; ?>">
-															<?php echo $m->marca; ?>
-														</label>
-														<input type="number" step="0.01" class="form-control" value="<?php echo $m->precio; ?>" id="precio-<?php echo $m->idmarca; ?>" name="precio-<?php echo $m->idmarca; ?>">
-													</div>
-													<?php endforeach; ?>
+														<?php if (!$m->es_otro): ?>
+														<div class="form-group">
+															<label for="precio-<?php echo $m->idmarca; ?>">
+																<?php echo $m->marca; ?>
+															</label>
+															<input type="number" step="0.01" class="form-control" value="<?php echo $m->precio; ?>" id="precio-<?php echo $m->idmarca; ?>" name="precio-<?php echo $m->idmarca; ?>">
+														</div>
+														<?php else: ?>
+														<div class="form-group">
+															<label for="precio-<?php echo $m->idmarca; ?>">
+																<?php echo $m->marca; ?>
+															</label>
+															<input placeholder="Escriba la marca" type="text"  class="form-control" value="" id="nombre-otro-<?php echo $m->idmarca; ?>" name="nombre-otro-<?php echo $m->idmarca; ?>">
+															<input type="number" step="0.01" class="form-control" value="<?php echo $m->precio; ?>" id="precio-<?php echo $m->idmarca; ?>" name="precio-<?php echo $m->idmarca; ?>">
+														</div>
+														<?php endif; ?>
+														<?php endforeach; ?>
 													<?php endif; ?>
 													<div class="form-group">
 														<input type="hidden" class="form-control" id="idformresp" name="idformresp" value="<?php echo $formulario_resp->idformresp; ?>" >

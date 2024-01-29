@@ -130,6 +130,7 @@
 							<?php echo form_open('formulario/procesaritemf/');?>
 							<?php if(!empty($marcas)):?>
 								<?php foreach ($marcas as $m): ?>
+									<?php if (!$m->es_otro): ?>
 									<div class="form-group">
 										<label for="precio-<?php echo $m->marca; ?>">
 											<?php echo $m->marca; ?>
@@ -137,6 +138,16 @@
 										<input type="number" step="0.01" placeholder="Costo mas bajo"   class="form-control" value="<?php echo $m->precio_bajo; ?>" id="precio-bajo-<?php echo $m->idmarca; ?>" name="precio-bajo-<?php echo $m->idmarca; ?>">
 										<input type="number" step="0.01" placeholder="Costo mas alto"  class="form-control" value="<?php echo $m->precio_alto; ?>" id="precio-alto-<?php echo $m->idmarca; ?>" name="precio-alto-<?php echo $m->idmarca; ?>">
 									</div>
+									<?php else: ?>
+										<div class="form-group">
+											<label for="precio-<?php echo $m->marca; ?>">
+												<?php echo $m->marca; ?>
+											</label>
+											<input placeholder="Escriba la marca" type="text"  class="form-control" value="" id="nombre-otro-<?php echo $m->idmarca; ?>" name="nombre-otro-<?php echo $m->idmarca; ?>">
+											<input type="number" step="0.01" placeholder="Costo mas bajo"   class="form-control" value="<?php echo $m->precio_bajo; ?>" id="precio-bajo-<?php echo $m->idmarca; ?>" name="precio-bajo-<?php echo $m->idmarca; ?>">
+											<input type="number" step="0.01" placeholder="Costo mas alto"  class="form-control" value="<?php echo $m->precio_alto; ?>" id="precio-alto-<?php echo $m->idmarca; ?>" name="precio-alto-<?php echo $m->idmarca; ?>">
+										</div>
+									<?php endif;?>
 								<?php endforeach; ?>
 							<?php endif; ?>
 							<div class="form-group">

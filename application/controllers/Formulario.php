@@ -208,8 +208,18 @@ class Formulario extends CI_Controller{
 
 
 		foreach ($precios as $p):
-			$lbl = 'precio-'.$p->idmarca;
-			$p->precio = $this->input->post($lbl);
+			if(!$p->es_otro)
+			{
+				$lbl = 'precio-'.$p->idmarca;
+				$p->precio = $this->input->post($lbl);
+			}else{
+				$lbl = 'precio-'.$p->idmarca;
+				$lblnombre = 'nombre-otro-'.$p->idmarca;
+				$p->marca = $this->input->post($lblnombre);
+				$p->precio = $this->input->post($lbl);
+			}
+			/*$lbl = 'precio-'.$p->idmarca;
+			$p->precio = $this->input->post($lbl);*/
 		endforeach;
 		//var_dump($precios);
 		//echo '<br>';
@@ -217,7 +227,7 @@ class Formulario extends CI_Controller{
 
 		//COnvertir a json
 		$precios_mod_json = json_encode($precios);
-		var_dump($precios_mod_json);
+		//var_dump($precios_mod_json);
 
 		//echo '<br>';
 		//echo '<br>';
@@ -249,10 +259,25 @@ class Formulario extends CI_Controller{
 		$precios = json_decode($precios_json);
 		//var_dump($precios);
 		foreach ($precios as $p):
-			$lblb = 'precio-bajo-'.$p->idmarca;  //precio-bajo-<?php echo $m->marca;
+			if(!$p->es_otro)
+			{
+				$lblb = 'precio-bajo-'.$p->idmarca;  //precio-bajo-<?php echo $m->marca;
+				$lbla = 'precio-alto-'.$p->idmarca;	 //precio-alto-<?php echo $m->marca;
+				$p->precio_bajo = $this->input->post($lblb);
+				$p->precio_alto = $this->input->post($lbla);
+			}else{
+				$lblb = 'precio-bajo-'.$p->idmarca;  //precio-bajo-<?php echo $m->marca;
+				$lbla = 'precio-alto-'.$p->idmarca;	 //precio-alto-<?php echo $m->marca;
+				$lblnombre = 'nombre-otro-'.$p->idmarca;
+				$p->precio_bajo = $this->input->post($lblb);
+				$p->precio_alto = $this->input->post($lbla);
+				$p->marca = $this->input->post($lblnombre);
+			}
+
+			/*$lblb = 'precio-bajo-'.$p->idmarca;  //precio-bajo-<?php echo $m->marca;
 			$lbla = 'precio-alto-'.$p->idmarca;	 //precio-alto-<?php echo $m->marca;
 			$p->precio_bajo = $this->input->post($lblb);
-			$p->precio_alto = $this->input->post($lbla);
+			$p->precio_alto = $this->input->post($lbla);*/
 
 		endforeach;
 

@@ -102,7 +102,7 @@
 		<?php endif;?>
 		<?php endforeach; ?>
 		<input type="hidden" id="idformresp" name="idformresp" value="<?php echo $formulario_resp->idformresp; ?>">
-		<button type="submit" class="btn btn-primary">Submit</button>
+		<button type="submit" class="btn btn-primary">Registrar</button>
 	<?php echo form_close(); ?>
 </div>
 
