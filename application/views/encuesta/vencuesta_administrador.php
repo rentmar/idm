@@ -4,7 +4,7 @@
 			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 color-contenedores" >
 				<p><h3 class="text-center" >Administrar Encuesta</h3></p>
 				<p class="text-right">
-					<a href="<?php echo site_url('encuesta/finalizarAdministrador'); ?>" class="BOTONROJO" >Finalizar</a>
+					<a href="<?php echo site_url('inicio'); ?>" class="BOTONROJO" >Finalizar</a>
 				</p>
 			</div>
 

@@ -14,6 +14,7 @@ class Encuesta extends CI_Controller
 		$this->load->model('Encuesta_model');
 		$this->load->model('Departamento_model');
 		$this->load->model('Formulario_model');
+		$this->load->model('Reporte_model');
 		$this->load->library('encryption');
 		$this->load->helper('form');
 		$this->load->helper('date');
@@ -690,9 +691,11 @@ class Encuesta extends CI_Controller
 		}
 		$encuesta = $this->Encuesta_model->leerTodasLasEncuestas();
 		$departamento = $this->Departamento_model->leerDepartamentos();
+		$ciudad = $this->Formulario_model->getCiudad();
 
 		$datos['encuesta'] = $encuesta;
 		$datos['departamento'] = $departamento;
+		$datos['ciudad'] = $ciudad;
 
 		$this->load->view('html/encabezado');
 		$this->load->view('html/navbar');
@@ -782,19 +785,93 @@ class Encuesta extends CI_Controller
 		//$encuestas_resultados = $this->Encuesta_model->leerLasEncuestasCompletadas($consulta);
 		//$secciones = $this->Encuesta_model->leerPreguntasDeUnaEncuesta($consulta->iduiencuesta);
 
-		$filename = "marcas-precios.xlsx";
-		$ruta = 'assets/info/';
-		$plantilla = $ruta.'marcas-precios-db.xlsx';
-		header("Content-Type: application/vnd.openxmlformats-officedocument.spreadsheet‌​ml.sheet");
-		header('Content-Disposition: attachment; filename="' . $filename. '"');
-		header('Cache-Control: max-age=0');
-		$spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($plantilla);
-		$sheet = $spreadsheet->getSheet(0)->setTitle('Marcas-Precios');
-		$worksheet = $spreadsheet->getActiveSheet();
+		$departamento = $this->input->post('iddepartamento');
 
-		$sheet = $spreadsheet->setActiveSheetIndex(0);
-		$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
-		$writer->save("php://output");
+		//Leer todos los formularios respuesta activados
+
+		if($departamento==0){
+			$formresp_gral = $this->Reporte_model->formulariosReportesGeneral();
+
+			$filename = "marcas-precios.xlsx";
+			$ruta = 'assets/info/';
+			$plantilla = $ruta.'marcas-precios-db.xlsx';
+			header("Content-Type: application/vnd.openxmlformats-officedocument.spreadsheet‌​ml.sheet");
+			header('Content-Disposition: attachment; filename="' . $filename. '"');
+			header('Cache-Control: max-age=0');
+			$spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($plantilla);
+			$sheet = $spreadsheet->getSheet(0)->setTitle('Marcas-Precios');
+			$worksheet = $spreadsheet->getActiveSheet();
+			$eje_x = 2;
+			foreach ($formresp_gral as $n):
+				$sheet->setCellValue('A'.$eje_x, $n->idformresp );
+				$sheet->setCellValue('B'.$eje_x, $n->username);
+				$sheet->setCellValue('C'.$eje_x, $n->nombre_ciudad);
+				$sheet->setCellValue('D'.$eje_x, $n->nombre_zona);
+				$sheet->setCellValue('E'.$eje_x, $n->nombre_lugar);
+				$sheet->setCellValue('F'.$eje_x, $n->nombre_del_lugar);
+				$sheet->setCellValue('G'.$eje_x, $n->fecha_fc);
+				$sheet->setCellValue('H'.$eje_x, '');
+				$sheet->setCellValue('I'.$eje_x, '');
+				$sheet->setCellValue('J'.$eje_x, '');
+				$sheet->setCellValue('K'.$eje_x, '');
+				$sheet->setCellValue('L'.$eje_x, '');
+
+				$eje_x++;
+			endforeach;
+
+
+
+
+
+
+
+			$sheet = $spreadsheet->setActiveSheetIndex(0);
+			$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
+			$writer->save("php://output");
+		}else{
+			$formresp_dep = $this->Reporte_model->formulariosReportesDepartameto($departamento);
+
+
+			$filename = "marcas-precios-dpto.xlsx";
+			$ruta = 'assets/info/';
+			$plantilla = $ruta.'marcas-precios-db.xlsx';
+			header("Content-Type: application/vnd.openxmlformats-officedocument.spreadsheet‌​ml.sheet");
+			header('Content-Disposition: attachment; filename="' . $filename. '"');
+			header('Cache-Control: max-age=0');
+			$spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($plantilla);
+			$sheet = $spreadsheet->getSheet(0)->setTitle('Marcas-Precios');
+			$worksheet = $spreadsheet->getActiveSheet();
+
+			$eje_x = 2;
+			foreach ($formresp_dep as $n):
+				$sheet->setCellValue('A'.$eje_x, $n->idformresp );
+				$sheet->setCellValue('B'.$eje_x, $n->username);
+				$sheet->setCellValue('C'.$eje_x, $n->nombre_ciudad);
+				$sheet->setCellValue('D'.$eje_x, $n->nombre_zona);
+				$sheet->setCellValue('E'.$eje_x, $n->nombre_lugar);
+				$sheet->setCellValue('F'.$eje_x, $n->nombre_del_lugar);
+				$sheet->setCellValue('G'.$eje_x, $n->fecha_fc);
+				$sheet->setCellValue('H'.$eje_x, '');
+				$sheet->setCellValue('I'.$eje_x, '');
+				$sheet->setCellValue('J'.$eje_x, '');
+				$sheet->setCellValue('K'.$eje_x, '');
+				$sheet->setCellValue('L'.$eje_x, '');
+
+				$eje_x++;
+			endforeach;
+
+
+
+
+			$sheet = $spreadsheet->setActiveSheetIndex(0);
+			$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
+			$writer->save("php://output");
+		}
+
+
+
+
+
 
 	}
 

@@ -5,7 +5,7 @@
 			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
 				<?php //echo form_open('encuesta/procesarConsulta'); ?>
 				<?php echo form_open('encuesta/exportarExcel'); ?>
-				<div class="contenedor_filtros">
+				<div class="">
 				</div>
 				<div class="contenedor">
 					<div id="caja_boton">
@@ -13,7 +13,7 @@
 							<a href=""><input type="submit" class="BOTON" value="GENERAR"></a>
 						</div><br>
 						<div id="contenedor-submit">
-							<a href="<?php echo site_url('encuesta/encuestaInicio');?>"><input type="" class="BOTONROJO" value="CANCELAR"></a>
+							<a href="<?php echo site_url('inicio');?>"><input type="" class="BOTONROJO" value="CANCELAR"></a>
 						</div>
 					</div>
 				</div>
@@ -100,20 +100,20 @@
 							<option value="2">Rural</option>
 
 						</select>
-					</div>
+					</div>--->
 
 					<br>
-					<h3>Departamento </h3>
+					<h3>Ciudad </h3>
 					<div class="form-row">
-						<select id="iddepartamento" name="iddepartamento" class="form-control simple" >
+						<select id="iddepartamento" name="iddepartamento" class="form-control" >
 							<option value="0" >Seleccione una opcion</option>
-							<?php /*foreach ($departamento as $a): */?>
-								<option value="<?php /*echo $a->iddepartamento;*/?>">
-									<?php /*echo $a->nombre_departamento; */?>
+							<?php foreach ($ciudad as $a): ?>
+								<option value="<?php echo $a->idciudad;?>">
+									<?php echo $a->nombre_ciudad; ?>
 								</option>
-							<?php /*endforeach; */?>
+							<?php 	endforeach; ?>
 						</select>
-					</div>-->
+					</div>
 
 
 
