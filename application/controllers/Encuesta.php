@@ -13,6 +13,7 @@ class Encuesta extends CI_Controller
 		$this->load->library('ion_auth');
 		$this->load->model('Encuesta_model');
 		$this->load->model('Departamento_model');
+		$this->load->model('Formulario_model');
 		$this->load->library('encryption');
 		$this->load->helper('form');
 		$this->load->helper('date');
@@ -778,248 +779,23 @@ class Encuesta extends CI_Controller
 
 	public function exportarExcel()
 	{
-		if(!isset($this->session->consulta_encuesta)){
-			redirect('encuesta/reportesEncuesta');
-		}
-		$consulta = $this->session->consulta_encuesta;
-		$nombre_encuesta = $this->Encuesta_model->leerEncuestaPorID($consulta->iduiencuesta);
-		$edad_inicial =  $consulta->edad_inicial;
-		$edad_final = $consulta->edad_final;
-		if((int)$consulta->sexo==0)
-		{
-			$sexo = 0;
-		}elseif((int)$consulta->sexo==1)
-		{
-			$sexo = 'Masculino';
-		}elseif ((int)$consulta->sexo==2)
-		{
-			$sexo = 'Femenino';
-		}
+		//$encuestas_resultados = $this->Encuesta_model->leerLasEncuestasCompletadas($consulta);
+		//$secciones = $this->Encuesta_model->leerPreguntasDeUnaEncuesta($consulta->iduiencuesta);
 
-		if((int)$consulta->area==0)
-		{
-			$area = 0;
-		}elseif((int)$consulta->area==1)
-		{
-			$area = 'Urbana';
-		}elseif ((int)$consulta->area==2)
-		{
-			$area = 'Rural';
-		}
+		$filename = "marcas-precios.xlsx";
+		$ruta = 'assets/info/';
+		$plantilla = $ruta.'marcas-precios-db.xlsx';
+		header("Content-Type: application/vnd.openxmlformats-officedocument.spreadsheet‌​ml.sheet");
+		header('Content-Disposition: attachment; filename="' . $filename. '"');
+		header('Cache-Control: max-age=0');
+		$spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($plantilla);
+		$sheet = $spreadsheet->getSheet(0)->setTitle('Marcas-Precios');
+		$worksheet = $spreadsheet->getActiveSheet();
 
+		$sheet = $spreadsheet->setActiveSheetIndex(0);
+		$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
+		$writer->save("php://output");
 
-		$encuestas_resultados = $this->Encuesta_model->leerLasEncuestasCompletadas($consulta);
-		$secciones = $this->Encuesta_model->leerPreguntasDeUnaEncuesta($consulta->iduiencuesta);
-
-		if(!empty($consulta)){
-			$filename = "reporte-encuestas.xlsx";
-			$ruta = 'assets/info/';
-			$plantilla = $ruta.'plantilla-encuesta-json-vr.xlsx';
-			header("Content-Type: application/vnd.openxmlformats-officedocument.spreadsheet‌​ml.sheet");
-			header('Content-Disposition: attachment; filename="' . $filename. '"');
-			header('Cache-Control: max-age=0');
-			$spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($plantilla);
-			$sheet = $spreadsheet->getSheet(0)->setTitle('Encuestas');
-			$worksheet = $spreadsheet->getActiveSheet();
-
-
-			$sheet->setCellValue('E3', $nombre_encuesta->uinombre_encuesta);
-			if($edad_inicial!=0 && $edad_final !=0){
-				$sheet->setCellValue('C5', $consulta->edad_inicial);
-				$sheet->setCellValue('D5', $consulta->edad_final);
-			}
-			if($consulta->sexo) {
-				$sheet->setCellValue('C6', $sexo);
-			}
-			if($consulta->area){
-				$sheet->setCellValue('C7', $area);
-			}
-
-			$eje_y = 13;
-			foreach ($encuestas_resultados as $n)
-			{
-				$sheet->setCellValue('A'.$eje_y, $n->idformcomp);
-				$sheet->setCellValue('B'.$eje_y, mdate('%m-%d-%Y', $n->fecha_fc));
-				$sheet->setCellValue('C'.$eje_y, $n->hash_fc);
-				$sheet->setCellValue('D'.$eje_y, $n->username);
-				$sheet->setCellValue('E'.$eje_y, number_format($n->latidud_fc,3, ",",""));
-				$sheet->setCellValue('F'.$eje_y, number_format($n->longitud_fc, 3, ",", ""));
-				$sheet->setCellValue('G'.$eje_y, $n->edad);
-				$sheet->setCellValue('H'.$eje_y, $n->sexo);
-				if($consulta->iduiencuesta == 3):
-					$sheet->setCellValue('I'.$eje_y, $n->sit_lab);
-					$sheet->setCellValue('J'.$eje_y, $n->sit_edu);
-				else:
-					$sheet->setCellValue('I'.$eje_y, $n->sit_laboral);
-					$sheet->setCellValue('J'.$eje_y, $n->sit_educativa);
-				endif;
-				$sheet->setCellValue('K'.$eje_y, $n->area);
-				$sheet->setCellValue('L'.$eje_y, $n->ciudad);
-				$sheet->setCellValue('M'.$eje_y, $n->zona);
-				$sheet->setCellValue('N'.$eje_y, $n->tiempo);
-				$eje_y++;
-			}
-
-			$sheet = $spreadsheet->getSheet(1)->setTitle('Respuestas');
-			$worksheet = $spreadsheet->getActiveSheet();
-			$sheet->setCellValue('E3', $nombre_encuesta->uinombre_encuesta);
-			if($edad_inicial!=0 && $edad_final !=0){
-				$sheet->setCellValue('C5', $consulta->edad_inicial);
-				$sheet->setCellValue('D5', $consulta->edad_final);
-			}
-			if($consulta->sexo) {
-				$sheet->setCellValue('C6', $sexo);
-			}
-			if($consulta->area){
-				$sheet->setCellValue('C7', $area);
-			}
-
-			//Imprimir Preguntas
-			//Preguntas
-			$eje_X = 'O';
-			$eje_y = 12;
-			foreach ($secciones as $s):
-				if($s->iduiseccion != 59):
-					$eje_auxiliar = $eje_y+1;
-					$sheet->setCellValue($eje_X.$eje_y, $s->etiqueta_seccion);
-					$sheet->setCellValue($eje_X.$eje_auxiliar, $s->uipregunta_nombre);
-					$eje_X++;
-				endif;
-			endforeach;
-			$eje_x_offset = $eje_X;
-
-			$eje_y = 14;
-			$eje_X = 'O';
-			foreach ($encuestas_resultados as $n)
-			{
-				$sheet->setCellValue('A'.$eje_y, $n->idformcomp);
-				$sheet->setCellValue('B'.$eje_y, mdate('%m-%d-%Y', $n->fecha_fc));
-				$sheet->setCellValue('C'.$eje_y, $n->hash_fc);
-				$sheet->setCellValue('D'.$eje_y, $n->username);
-				$sheet->setCellValue('E'.$eje_y, number_format($n->latidud_fc,3, ",",""));
-				$sheet->setCellValue('F'.$eje_y, number_format($n->longitud_fc, 3, ",", ""));
-				$sheet->setCellValue('G'.$eje_y, $n->edad);
-				$sheet->setCellValue('H'.$eje_y, $n->sexo);
-				if($consulta->iduiencuesta == 3):
-					$sheet->setCellValue('I'.$eje_y, $n->sit_lab);
-					$sheet->setCellValue('J'.$eje_y, $n->sit_edu);
-				else:
-					$sheet->setCellValue('I'.$eje_y, $n->sit_laboral);
-					$sheet->setCellValue('J'.$eje_y, $n->sit_educativa);
-				endif;
-				$sheet->setCellValue('K'.$eje_y, $n->area);
-				$sheet->setCellValue('L'.$eje_y, $n->ciudad);
-				$sheet->setCellValue('M'.$eje_y, $n->zona);
-				$sheet->setCellValue('N'.$eje_y, $n->tiempo);
-				$eje_X = 'O';
-				$registro = json_decode($n->formcj) ;
-				if(isset($registro)):
-				foreach ($registro as $r){
-					if($r->idtipopregunta==1){
-						$respuesta = $r->respuestas;
-						$sheet->setCellValue($eje_X.$eje_y, $respuesta->respuesta);
-						$eje_X++;
-					}
-					elseif ($r->idtipopregunta==2){
-						$sheet->setCellValue($eje_X.$eje_y, $r->tipopregunta);
-						$eje_X++;
-
-					}
-					elseif ($r->idtipopregunta==3){
-						//Pregunta abierta simple
-						$respuesta = $r->respuestas;
-						$sheet->setCellValue($eje_X.$eje_y, $respuesta->respuesta);
-						$eje_X++;
-					}
-					elseif ($r->idtipopregunta==4){
-						//Seleccion multiple, mas una respuesta abierta (otro)
-						$respuesta = $r->respuestas;
-						$literal_respuesta = ' ';
-						$rptmp = '';
-						foreach ($respuesta as $rp){
-							if(!$rp->es_otro){
-								$rptmp = $rp->respuesta;
-							}else{
-								$rptmp = $rp->respuesta."(".$rp->otro_txt.")";
-							}
-							$literal_respuesta .= $rptmp."/";
-						}
-						$sheet->setCellValue($eje_X.$eje_y, $literal_respuesta);
-						$eje_X++;
-					}elseif ($r->idtipopregunta==5){
-						$eje_x_des = $eje_x_offset;
-						//Seleccion multiple cuantificada
-						$respuesta = $r->respuestas;
-						$literal_respuesta = ' ';
-						$rptmp = '';
-						foreach ($respuesta as $rp){
-							if($rp->idopcion != 8):
-							$sheet->setCellValue($eje_x_des.$eje_y, $rp->valor);
-							$eje_x_des++;
-							endif;
-						}
-
-						/*foreach ($respuesta as $rp){
-							if($rp->idopcion == 1){
-								$rptmp = "Presidente: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 2){
-								$rptmp = "Vicepresidente: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 3){
-								$rptmp = "Ministros: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 4){
-								$rptmp = "Senadores y diputados: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 5){
-								$rptmp = "Jueces: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 6){
-								$rptmp = "Fiscales: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 7){
-								$rptmp = "Alcaldes: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 8){
-
-							}elseif ($rp->idopcion == 9){
-								$rptmp = "Gobernadores: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 10){
-								$rptmp = "Autoridades del Órgano Electoral: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 11){
-								$rptmp = "Policía: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 12){
-								$rptmp = "Militares: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 13){
-								$rptmp = "Iglesia: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 14){
-								$rptmp = "Organismos internacionales: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 15){
-								$rptmp = "Medios de comunicación: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 16){
-								$rptmp = "ONGs: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 17){
-								$rptmp = "Comités Cívicos: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 18){
-								$rptmp = "Universidades: "."(".$rp->valor.")";
-							}elseif ($rp->idopcion == 19){
-								$rptmp = "Organizaciones sociales: "."(".$rp->valor.")";
-							}
-							$literal_respuesta .= $rptmp."/";
-						}
-
-						$sheet->setCellValue($eje_X.$eje_y, $literal_respuesta);
-						$eje_X++;*/
-					}elseif ($r->idtipopregunta==6){
-						$sheet->setCellValue($eje_X.$eje_y, $r->tipopregunta);
-						$eje_X++;
-					}
-				}
-				endif;
-				$eje_y++;
-			}
-
-			$sheet = $spreadsheet->setActiveSheetIndex(0);
-			$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
-			$writer->save("php://output");
-		}else{
-			$this->mensaje('Generar otro reporte', 'info');
-			redirect('encuesta/reportesEncuesta');
-		}
 	}
 
 	public function reasignarEncuesta($identificador)
@@ -1085,6 +861,21 @@ class Encuesta extends CI_Controller
 	public function administrar($identificador)
 	{
 		$idencuesta = $identificador;
+		$datos['encuesta_datos_generales'] = $this->Encuesta_model->listarFormulariosCompletos($idencuesta);
+		$datos['idencuesta'] = $idencuesta;
+
+
+
+		$this->load->view('html/encabezado');
+		$this->load->view('html/navbar');
+		$this->load->view('encuesta/vencuesta_administrador', $datos);
+		$this->load->view('html/pie');
+
+
+
+
+
+		/*$idencuesta = $identificador;
 
 		//Crear la variable de session para la administracion
 		if(!isset($this->session->admin_encuesta))
@@ -1101,12 +892,28 @@ class Encuesta extends CI_Controller
 		$this->load->view('html/encabezado');
 		$this->load->view('html/navbar');
 		$this->load->view('encuesta/vencuesta_administrador', $datos);
-		$this->load->view('html/pie');
+		$this->load->view('html/pie');*/
 	}
 
-	public function cambiarEstadoRegistro($identificador)
+	public function cambiarEstadoRegistro($identificador, $iduiform)
 	{
-		$idformcomp = $identificador;
+		$rel_iduiformulario = $iduiform;
+		$idformresp = $identificador;
+
+		$form_respuesta = $this->Formulario_model->getFormularioPorID($idformresp);
+
+		//var_dump($form_respuesta);
+
+		if($form_respuesta->esta_abierto)
+		{
+			$estado = 0;
+		}else
+		{
+			$estado = 1;
+		}
+		$this->Encuesta_model->cambiarEstadoFormulario($idformresp, $estado);
+		redirect('encuesta/administrar/'.$rel_iduiformulario);
+		/*$idformcomp = $identificador;
 		$form_encuesta = $this->Encuesta_model->formularioCompletadoPorID($identificador);
 		$idencuesta = $this->session->admin_encuesta;
 		if($form_encuesta->es_valida)
@@ -1116,8 +923,36 @@ class Encuesta extends CI_Controller
 			$estado = 1;
 		}
 		$this->Encuesta_model->cambiarEstadoFormulario($idformcomp, $estado);
-		redirect('encuesta/administrar/'.$idencuesta);
+		redirect('encuesta/administrar/'.$idencuesta);*/
 	}
+
+
+	public function habilitar($identificador, $iduiform)
+	{
+
+		$rel_iduiformulario = $iduiform;
+		$idformresp = $identificador;
+
+		$form_respuesta = $this->Formulario_model->getFormularioPorID($idformresp);
+
+		//var_dump($form_respuesta);
+
+		if($form_respuesta->es_valido)
+		{
+			$estado = 0;
+		}else
+		{
+			$estado = 1;
+		}
+		$this->Encuesta_model->cambiarHabilitarFormulario($idformresp, $estado);
+		redirect('encuesta/administrar/'.$rel_iduiformulario);
+	}
+
+
+
+
+
+
 
 	public function finalizarAdministrador()
 	{

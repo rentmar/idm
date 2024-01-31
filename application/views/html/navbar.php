@@ -107,9 +107,7 @@
 <div class="nav-scroller ">
 	<nav class="nav nav-underline">
 		<!--Solo Monitores -->
-		<?php if($this->ion_auth->in_group(3)): ?>
 		<a class="nav-link " href="<?php echo site_url('inicio')?>">Inicio</a>
-		<?php endif; ?>
 
 		<!-- Administradores y Docentes -->
 		<?php if($this->ion_auth->is_admin() || $this->ion_auth->in_group(2)): ?>

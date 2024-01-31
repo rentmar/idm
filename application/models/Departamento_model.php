@@ -14,11 +14,11 @@ class Departamento_model extends CI_Model
 		$qry = $this->db->get('departamento');
 		return $qry->result();
 	}
-	public function leerUniversidades()
+	/*public function leerUniversidades()
 	{
 		$qry = $this->db->get('universidad');
 		return $qry->result();
-	}
+	}*/
 	//Leer un solo departamento
 	public function leerDepartamento($identificador)
 	{

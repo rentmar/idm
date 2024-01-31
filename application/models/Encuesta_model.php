@@ -841,10 +841,19 @@ class  Encuesta_model extends CI_Model
 	{
 		/** @noinspection PhpLanguageLevelInspection */
 		$data = [
-			'es_valida' => $estado,
+			'esta_abierto' => $estado,
 		];
-		$this->db->where('idformcomp', $identificador);
-		$this->db->update(' formulariocompletado', $data);
+		$this->db->where('idformresp', $identificador);
+		$this->db->update('formulario_respuesta', $data);
+	}
+	public function cambiarHabilitarFormulario($identificador, $estado)
+	{
+		/** @noinspection PhpLanguageLevelInspection */
+		$data = [
+			'es_valido ' => $estado,
+		];
+		$this->db->where('idformresp', $identificador);
+		$this->db->update('formulario_respuesta', $data);
 	}
 
 	public function resultadosEncuestaDatosGeneralesActivos($parametros)
@@ -1169,6 +1178,45 @@ class  Encuesta_model extends CI_Model
 
 		$qry = $this->db->query($sql);
 		return $qry->row();
+	}
+
+
+	public function listarFormulariosCompletos($idformui)
+	{
+		$sql = "SELECT formulario_respuesta.idformresp, formulario_respuesta.nombre_lugar AS nombre_del_lugar, formulario_respuesta.esta_abierto, formulario_respuesta.es_valido, formulario_respuesta.rel_iduiformulario, ciudad.idciudad, ciudad.nombre_ciudad, zona.idzona, zona.nombre_zona, lugar.idlugar, lugar.nombre_lugar, formulario_respuesta.rel_idusuario, formulario_respuesta.rel_iduiformulario, formulario_respuesta.fecha_fc, formulario_respuesta.rel_iduiformulario, users.id, users.username                        "
+			."FROM  formulario_respuesta   "
+			."LEFT JOIN users ON users.id = formulario_respuesta.rel_idusuario   "
+			."LEFT JOIN ciudad ON ciudad.idciudad = formulario_respuesta.rel_idciudad      "
+			."LEFT JOIN zona ON zona.idzona = formulario_respuesta.rel_idzona      "
+			."LEFT JOIN lugar ON lugar.idlugar = formulario_respuesta.rel_idlugar      "
+			."WHERE formulario_respuesta.rel_iduiformulario = ?   "
+			."   "
+			."  "
+			."   "
+			."   "
+			."   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql, [$idformui, ]);
+		return $qry->result();
+
+
+
+
+
+		//Solo la fecha de la noticia
+
+		$idencuesta = $identificador;
+		//Array de placeholders
+
+		$sql = "SELECT * "
+			."FROM formulario_respuesta  "
+			."WHERE formulario_respuesta.rel_iduiformulario = ? "
+			." "
+			." ";
+
+		$qry = $this->db->query($sql, [$idencuesta,]);
+		return $qry->result();
 	}
 
 

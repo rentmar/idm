@@ -3,7 +3,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-				<?php echo form_open('encuesta/procesarConsulta'); ?>
+				<?php //echo form_open('encuesta/procesarConsulta'); ?>
+				<?php echo form_open('encuesta/exportarExcel'); ?>
 				<div class="contenedor_filtros">
 				</div>
 				<div class="contenedor">
@@ -61,7 +62,7 @@
 					</div>
 
 					<br>
-					<h3>Edad </h3>
+					<!--<h3>Edad </h3>
 
 					<div class="form-row">
 						<div class="input-group mb-3">
@@ -77,9 +78,9 @@
 							<input id="edadfinal" name="edadfinal" type="number" min="0" max="200" class="form-control" >
 						</div>
 
-					</div>
+					</div>-->
 
-					<br>
+					<!--<br>
 					<h3>Sexo</h3>
 					<div class="form-row">
 						<select id="sexo" name="sexo" class="form-control simple"  >
@@ -106,13 +107,13 @@
 					<div class="form-row">
 						<select id="iddepartamento" name="iddepartamento" class="form-control simple" >
 							<option value="0" >Seleccione una opcion</option>
-							<?php foreach ($departamento as $a): ?>
-								<option value="<?php echo $a->iddepartamento;?>">
-									<?php echo $a->nombre_departamento; ?>
+							<?php /*foreach ($departamento as $a): */?>
+								<option value="<?php /*echo $a->iddepartamento;*/?>">
+									<?php /*echo $a->nombre_departamento; */?>
 								</option>
-							<?php endforeach; ?>
+							<?php /*endforeach; */?>
 						</select>
-					</div>
+					</div>-->
 
 
 

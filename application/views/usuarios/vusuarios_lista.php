@@ -18,6 +18,7 @@
 					<?php echo "Usuarios ".$titulo; ?>
 				</h3>
 			</div>
+
 			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 color-contenedores">
 				<table id="usuarios-tabla" class="table">
 					<thead class="thead-dark">
