@@ -43,37 +43,37 @@
 			<?php endif; ?>
 
 			<?php if($this->ion_auth->is_admin()): ?>
-			<li class="nav-item dropdown">
+			<!--<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Datos Formulario
 				</a>
 				<div class="dropdown-menu" aria-labelledby="dropdown02">
-					<a class="dropdown-item" href="<?php echo site_url('formulario/');?>">Formularios</a>
-					<a class="dropdown-item" href="<?php echo site_url('actor/');?>">Actores</a>
-					<a class="dropdown-item" href="<?php echo site_url('departamento/');?>">Departamentos</a>
-					<a class="dropdown-item" href="<?php echo site_url('universidad/');?>">Universidades</a>
-					<a class="dropdown-item" href="<?php echo site_url('tipoMedio/');?>">Tipo de Medio</a>
-					<a class="dropdown-item" href="<?php echo site_url('medioComunicacion/');?>">Medio de Comunicacion</a>
-					<a class="dropdown-item" href="<?php echo site_url('tema/');?>">Tema</a>
-					<a class="dropdown-item" href="<?php echo site_url('subTema/');?>">Subtema</a>
+					<a class="dropdown-item" href="<?php /*echo site_url('formulario/');*/?>">Formularios</a>
+					<a class="dropdown-item" href="<?php /*echo site_url('actor/');*/?>">Actores</a>
+					<a class="dropdown-item" href="<?php /*echo site_url('departamento/');*/?>">Departamentos</a>
+					<a class="dropdown-item" href="<?php /*echo site_url('universidad/');*/?>">Universidades</a>
+					<a class="dropdown-item" href="<?php /*echo site_url('tipoMedio/');*/?>">Tipo de Medio</a>
+					<a class="dropdown-item" href="<?php /*echo site_url('medioComunicacion/');*/?>">Medio de Comunicacion</a>
+					<a class="dropdown-item" href="<?php /*echo site_url('tema/');*/?>">Tema</a>
+					<a class="dropdown-item" href="<?php /*echo site_url('subTema/');*/?>">Subtema</a>
 				</div>
-			</li>
+			</li>-->
 			<?php endif; ?>
 
-			<?php if($this->ion_auth->is_admin()): ?>
+			<?php /*if($this->ion_auth->is_admin()): */?><!--
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						Encuestas/UI
 					</a>
 					<div class="dropdown-menu" aria-labelledby="dropdown02">
-						<a class="dropdown-item" href="<?php echo site_url('encuesta');?>">Encuesta</a>
-						<a class="dropdown-item" href="<?php echo site_url('encuesta/seccionUI');?>">Seccion</a>
-						<a class="dropdown-item" href="<?php echo site_url('encuesta/preguntaUI');?>">Pregunta</a>
-						<a class="dropdown-item" href="<?php echo site_url('encuesta/respuestaUI');?>">Respuesta</a>
-						<a class="dropdown-item" href="<?php echo site_url('encuesta/geolocalizacionUI');?>">Localizacion</a>
+						<a class="dropdown-item" href="<?php /*echo site_url('encuesta');*/?>">Encuesta</a>
+						<a class="dropdown-item" href="<?php /*echo site_url('encuesta/seccionUI');*/?>">Seccion</a>
+						<a class="dropdown-item" href="<?php /*echo site_url('encuesta/preguntaUI');*/?>">Pregunta</a>
+						<a class="dropdown-item" href="<?php /*echo site_url('encuesta/respuestaUI');*/?>">Respuesta</a>
+						<a class="dropdown-item" href="<?php /*echo site_url('encuesta/geolocalizacionUI');*/?>">Localizacion</a>
 					</div>
 				</li>
-			<?php endif; ?>
+			--><?php /*endif; */?>
 
 		</ul>
 		<ul class="navbar-nav ml-auto">
