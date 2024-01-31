@@ -537,6 +537,55 @@ class Formulario_model extends CI_Model
 	}
 
 
+	public function formulariosLaPaz()
+	{
+		$sql = "SELECT formulario_respuesta.idformresp, formulario_respuesta.nombre_lugar AS nombre_del_lugar, formulario_respuesta.esta_abierto, formulario_respuesta.es_valido, ciudad.idciudad, ciudad.nombre_ciudad, zona.idzona, zona.nombre_zona, lugar.idlugar, lugar.nombre_lugar, formulario_respuesta.rel_idusuario, formulario_respuesta.rel_iduiformulario, formulario_respuesta.fecha_fc, formulario_respuesta.rel_iduiformulario, formulario_respuesta.masvendidos, users.id, users.username             "
+			."FROM  formulario_respuesta    "
+			."LEFT JOIN users ON users.id = formulario_respuesta.rel_idusuario   "
+			."LEFT JOIN ciudad ON ciudad.idciudad = formulario_respuesta.rel_idciudad       "
+			."LEFT JOIN zona ON zona.idzona = formulario_respuesta.rel_idzona      "
+			."LEFT JOIN lugar ON lugar.idlugar = formulario_respuesta.rel_idlugar      "
+			."WHERE formulario_respuesta.rel_iduiformulario = 1   "
+			."AND ciudad.idciudad = 1 OR ciudad.idciudad = 2   "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql);
+		return $qry->result();
+	}
+
+	public function formulariosCocha()
+	{
+		$sql = "SELECT formulario_respuesta.idformresp, formulario_respuesta.nombre_lugar AS nombre_del_lugar, formulario_respuesta.esta_abierto, formulario_respuesta.es_valido, ciudad.idciudad, ciudad.nombre_ciudad, zona.idzona, zona.nombre_zona, lugar.idlugar, lugar.nombre_lugar, formulario_respuesta.rel_idusuario, formulario_respuesta.rel_iduiformulario, formulario_respuesta.fecha_fc, formulario_respuesta.rel_iduiformulario, formulario_respuesta.masvendidos, users.id, users.username             "
+			."FROM  formulario_respuesta    "
+			."LEFT JOIN users ON users.id = formulario_respuesta.rel_idusuario   "
+			."LEFT JOIN ciudad ON ciudad.idciudad = formulario_respuesta.rel_idciudad       "
+			."LEFT JOIN zona ON zona.idzona = formulario_respuesta.rel_idzona      "
+			."LEFT JOIN lugar ON lugar.idlugar = formulario_respuesta.rel_idlugar      "
+			."WHERE formulario_respuesta.rel_iduiformulario = 1   "
+			."AND ciudad.idciudad = 3    "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql);
+		return $qry->result();
+	}
+
+	public function formulariosScz()
+	{
+		$sql = "SELECT formulario_respuesta.idformresp, formulario_respuesta.nombre_lugar AS nombre_del_lugar, formulario_respuesta.esta_abierto, formulario_respuesta.es_valido, ciudad.idciudad, ciudad.nombre_ciudad, zona.idzona, zona.nombre_zona, lugar.idlugar, lugar.nombre_lugar, formulario_respuesta.rel_idusuario, formulario_respuesta.rel_iduiformulario, formulario_respuesta.fecha_fc, formulario_respuesta.rel_iduiformulario, formulario_respuesta.masvendidos, users.id, users.username             "
+			."FROM  formulario_respuesta    "
+			."LEFT JOIN users ON users.id = formulario_respuesta.rel_idusuario   "
+			."LEFT JOIN ciudad ON ciudad.idciudad = formulario_respuesta.rel_idciudad       "
+			."LEFT JOIN zona ON zona.idzona = formulario_respuesta.rel_idzona      "
+			."LEFT JOIN lugar ON lugar.idlugar = formulario_respuesta.rel_idlugar      "
+			."WHERE formulario_respuesta.rel_iduiformulario = 1   "
+			."AND ciudad.idciudad = 4    "
+			."   "
+			."   ";
+		$qry = $this->db->query($sql);
+		return $qry->result();
+	}
+
+
 
 
 }

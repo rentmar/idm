@@ -938,8 +938,31 @@ class Encuesta extends CI_Controller
 	public function administrar($identificador)
 	{
 		$idencuesta = $identificador;
+		$usuario = $this->ion_auth->user()->row();
+		//var_dump($usuario);
+
+		//Para administrador
+		if($this->ion_auth->in_group(1)):
 		$datos['encuesta_datos_generales'] = $this->Encuesta_model->listarFormulariosCompletos($idencuesta);
 		$datos['idencuesta'] = $idencuesta;
+		elseif ($this->ion_auth->in_group(2)):
+			if($usuario->rel_iddepartamento==1) //La Paz y el Alto
+			{
+				$datos['encuesta_datos_generales'] = $this->Formulario_model->formulariosLaPaz();
+				$datos['idencuesta'] = $idencuesta;
+			}
+			elseif ($usuario->rel_iddepartamento==4) //Cochabamba
+			{
+				$datos['encuesta_datos_generales'] = $this->Formulario_model->formulariosCocha();
+				$datos['idencuesta'] = $idencuesta;
+			}elseif ($usuario->rel_iddepartamento==2) //SCZ
+			{
+				$datos['encuesta_datos_generales'] = $this->Formulario_model->formulariosScz();
+				$datos['idencuesta'] = $idencuesta;
+			}
+
+		endif;
+
 
 
 
