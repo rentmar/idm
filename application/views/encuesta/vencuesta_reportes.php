@@ -9,9 +9,9 @@
 				</div>
 				<div class="contenedor">
 					<div id="caja_boton">
-						<div id="contenedor-submit">
+						<!--<div id="contenedor-submit">
 							<a href=""><input type="submit" class="BOTON" value="GENERAR"></a>
-						</div><br>
+						</div><br>-->
 						<div id="contenedor-submit">
 							<a href="<?php echo site_url('inicio');?>"><input type="" class="BOTONROJO" value="CANCELAR"></a>
 						</div>
@@ -49,17 +49,17 @@
 
 					<br>
 
-					<h3>Encuesta </h3>
+					<!--<h3>Encuesta </h3>
 					<div class="form-row">
 						<select id="iduiencuesta" name="iduiencuesta" class="form-control simple" required >
 							<option value="" >Seleccione una opcion</option>
-							<?php foreach ($encuesta as $fm): ?>
-									<option value="<?php echo $fm->iduiencuesta; ?>" >
-										<?php echo $fm->uinombre_encuesta; ?>
+							<?php /*foreach ($encuesta as $fm): */?>
+									<option value="<?php /*echo $fm->iduiencuesta; */?>" >
+										<?php /*echo $fm->uinombre_encuesta; */?>
 									</option>
-							<?php endforeach;  ?>
+							<?php /*endforeach;  */?>
 						</select>
-					</div>
+					</div>-->
 
 					<br>
 					<!--<h3>Edad </h3>
@@ -102,18 +102,45 @@
 						</select>
 					</div>--->
 
-					<br>
+					<!--<br>
 					<h3>Ciudad </h3>
 					<div class="form-row">
 						<select id="iddepartamento" name="iddepartamento" class="form-control" >
 							<option value="0" >Seleccione una opcion</option>
-							<?php foreach ($ciudad as $a): ?>
-								<option value="<?php echo $a->idciudad;?>">
-									<?php echo $a->nombre_ciudad; ?>
+							<?php /*foreach ($ciudad as $a): */?>
+								<option value="<?php /*echo $a->idciudad;*/?>">
+									<?php /*echo $a->nombre_ciudad; */?>
 								</option>
-							<?php 	endforeach; ?>
+							<?php /*	endforeach; */?>
 						</select>
+					</div>-->
+					<br>
+					<h3>Reporte General</h3>
+					<div class="form-row">
+						<a href="https://ocd.rolcaessrl.com/public/reportegeneral/" class="btn btn-secondary" role="button">Descargar</a>
 					</div>
+
+					<br>
+					<h3>Reporte La Paz</h3>
+					<div class="form-row">
+						<a href="https://ocd.rolcaessrl.com/public/reportegeneral/lapaz" class="btn btn-secondary" role="button">Descargar</a>
+					</div>
+					<br>
+					<h3>Reporte El Alto</h3>
+					<div class="form-row">
+						<a href="https://ocd.rolcaessrl.com/public/reportegeneral/elalto" class="btn btn-secondary" role="button">Descargar</a>
+					</div>
+					<br>
+					<h3>Reporte Cochabamba</h3>
+					<div class="form-row">
+						<a href="https://ocd.rolcaessrl.com/public/reportegeneral/cochabamba" class="btn btn-secondary" role="button">Descargar</a>
+					</div>
+					<br>
+					<h3>Reporte Santa Cruz</h3>
+					<div class="form-row">
+						<a href="https://ocd.rolcaessrl.com/public/reportegeneral/santacruz" class="btn btn-secondary" role="button">Descargar</a>
+					</div>
+
 
 
 
